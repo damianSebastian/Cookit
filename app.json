@@ -4,15 +4,16 @@
     "slug": "Cookit",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app_code/apps/assets/loading_logo.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app_code/apps/assets/waiting_egg.png" ,
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8aba32"
+      
     },
     "updates": {
       "fallbackToCacheTimeout": 0
-    },
+    },    
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app_code/apps/assets/waiting_egg.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app_code/apps/assets/cookit_logo.png"
     }
   }
 }
