@@ -9,7 +9,7 @@ const messages = [
     {
         id:1,
         title:"Paste carbonara",
-        subtitle:"17 ingrediente, 45 de minute",
+        subtitle:"9 ingrediente, 30 de minute",
         image:require('../covers/carbonara.jpg'),
     },
     {

@@ -7,8 +7,7 @@ import colors from '../config/colors';
 function Card({title, subtitle, image, onPress}) {
     return (
         <TouchableOpacity style={style.card} onPress={onPress}>
-            <Image source={image} style={style.image}
-            resizeMode="contain"/>
+            <Image source={image} style={style.image}/>
             <View style={style.detailContainer}>
                 <Text style={style.title}>{title}</Text>
                  <Text style={style.subtitle}>{subtitle}</Text>
@@ -23,7 +22,7 @@ export default Card;
 
 const style=StyleSheet.create({
     card :{
-      backgroundColor : '#fff',
+      backgroundColor : colors.cardBackground,
       borderRadius: 15,
       
       margin:20,
@@ -45,7 +44,7 @@ const style=StyleSheet.create({
     subtitle:{
         fontSize: 20,
         marginTop:5,
-        color:colors.gray,
+        color:colors.lightText,
         
 
     },
