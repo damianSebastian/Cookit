@@ -34,8 +34,8 @@ const buttonStyel = StyleSheet.create ({
       
     },
     buttonText : {
-      fontSize : 25,
+      fontSize : 30,
       fontWeight : 'bold',
-      color : colors.lightText,
+      color : colors.text,
     }
   })
