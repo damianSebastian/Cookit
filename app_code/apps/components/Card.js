@@ -28,6 +28,11 @@ const style=StyleSheet.create({
       margin:20,
       overflow:'hidden',
       //flexDirection: 'row',
+      elevation:20,
+      shadowColor:'black',
+      shadowOpacity:1,
+      shadowRadius: 5,
+      shadowOffset:{width: 10, height: 10},
       
     },
     image: {

@@ -10,9 +10,9 @@ function ListSeparator() {
 
 const style=StyleSheet.create({
     separator:{
-        height:1,
+        height:3,
         width:"100%",
-        backgroundColor:colors.gray,
+        backgroundColor:'black',
     }
 })
 

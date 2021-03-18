@@ -5,12 +5,17 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import CardScreen from './app_code/apps/screens/CardScreen';
 import WellcomeScreen from './app_code/apps/screens/WellcomeScreen';
-
+import StatusScreen from './app_code/apps/screens/StatusScreen';
+import MenuScreen from './app_code/apps/screens/MenuScreen';
 export default function App() {
   return (
     
-    //<CardScreen/>
-    <WellcomeScreen/>
+   // <CardScreen/>
+   // <WellcomeScreen/>
+    // <StatusScreen title="avram"
+    // subtitle="sebastian"
+    // image={require('./app_code/apps/assets/cookit_logo.png')}/>
+    <MenuScreen/>
   );
 }
 

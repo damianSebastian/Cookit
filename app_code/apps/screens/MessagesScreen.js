@@ -11,13 +11,13 @@ const messages = [
         id:1,
         title:'T1',
         description:'D1',
-        image: require('../assets/logo.png'),
+        image: require('../assets/cookit_logo.png'),
     },
     {
         id:2,
         title:'T2',
         description:'D2',
-        image: require('../assets/logo.png'),
+        image: require('../assets/cookit_logo.png'),
     },
 ]
 
@@ -42,5 +42,5 @@ function MessagesScreen() {
         </Screen>
     );
 } 
-// renderRightActions={() => <View style={{ backgroundColor:'red', width:70}}/>}
+
 export default MessagesScreen;

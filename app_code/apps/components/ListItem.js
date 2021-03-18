@@ -4,34 +4,43 @@ import { View, Image, Text,StyleSheet, TouchableHighlight} from 'react-native';
 
 import colors from '../config/colors';
 
-function ListItem({profileImage,name,nameDetalis, onPress}) {
+function ListItem({profileImage, name,nameDetalis, onPress}) {
     return (
         
             <TouchableHighlight 
-                underlayColor={colors.cardBackground}
-                onPress={onPress}>
-                <View style={style.profile}>
-                    <Image source={profileImage} style={{width: 80, height:"100%"}} resizeMode="contain"/>
-                    <View>
-                        <Text style={style.name}>{name}</Text>
-                        <Text style={style.nameDetalis}>{nameDetalis}</Text>
+                underlayColor={colors.button}
+                onPress={onPress}
+                style={styles.profile}
+                onPress={onPress}
+                >
+                <View style={styles.viewStyle}>
+                    <Image source={profileImage} style={styles.imageStyle} resizeMode="contain"/>
+                    <View style ={{marginLeft:10}}>
+                        <Text style={styles.name}>{name}</Text>
+                        <Text style={styles.nameDetalis}>{nameDetalis}</Text>
                     </View>
                 </View>
             </TouchableHighlight>
 
-       
-
-        
     );
 }
 
-const style=StyleSheet.create({
+const styles=StyleSheet.create({
     profile:{
-        height: 70,
+        height: 100,
         width:"100%",
-        margin:10,
+        
+        marginTop:15,
+        marginBottom:15,
+   
+        
+    },
+    viewStyle:{
         flexDirection: 'row',
-        justifyContent: 'flex-start',   
+        alignItems:'center', 
+        backgroundColor:colors.cardBackground,
+        flex: 1,
+        
         
     },
     name:{
@@ -43,6 +52,11 @@ const style=StyleSheet.create({
     nameDetalis:{
         fontSize:15,
         color:colors.gray,
+    },
+    imageStyle:{
+        width: 80,
+        height:"100%",
+        borderRadius: 40,
     }
 })
 
