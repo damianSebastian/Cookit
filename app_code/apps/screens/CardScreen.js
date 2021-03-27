@@ -8,7 +8,7 @@ import Screen from '../components/Screen';
 const messages = [
     {
         id:1,
-        title:"Paste carbonara",
+        title:"Ou ochi",
         subtitle:"9 ingrediente, 30 de minute",
         image:require('../covers/carbonara.jpg'),
     },

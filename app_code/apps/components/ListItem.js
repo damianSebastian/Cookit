@@ -1,62 +1,39 @@
 import React from 'react';
-import { View, Image, Text,StyleSheet, TouchableHighlight} from 'react-native';
+import { View, Image, Text, StyleSheet, TouchableWithoutFeedback} from 'react-native';
 
 
-import colors from '../config/colors';
+import defaultProps from '../config/defaultProps';
 
-function ListItem({profileImage, name,nameDetalis, onPress}) {
+function ListItem({profileImage,name,nameDetalis, onPress}) {
     return (
         
-            <TouchableHighlight 
-                underlayColor={colors.button}
-                onPress={onPress}
-                style={styles.profile}
-                onPress={onPress}
-                >
-                <View style={styles.viewStyle}>
-                    <Image source={profileImage} style={styles.imageStyle} resizeMode="contain"/>
-                    <View style ={{marginLeft:10}}>
-                        <Text style={styles.name}>{name}</Text>
-                        <Text style={styles.nameDetalis}>{nameDetalis}</Text>
-                    </View>
-                </View>
-            </TouchableHighlight>
-
+    <TouchableWithoutFeedback
+            onPress={onPress}>
+             
+        <View style={style.profile}  > 
+            <Image source={profileImage} style={{width: 90, height:"100%"}} resizeMode="contain"/>
+            <View style={style.cont}>
+                <Text style={defaultProps.mainText}>{name}</Text>
+                <Text style={defaultProps.descriptionText}>{nameDetalis}</Text>
+            </View>
+       </View> 
+    </TouchableWithoutFeedback>
     );
 }
 
-const styles=StyleSheet.create({
+const style=StyleSheet.create({
     profile:{
-        height: 100,
+        height: 80,
         width:"100%",
-        
-        marginTop:15,
-        marginBottom:15,
-   
-        
-    },
-    viewStyle:{
+        marginTop:10,
+        backgroundColor:defaultProps.colors.mainBackground,
         flexDirection: 'row',
-        alignItems:'center', 
-        backgroundColor:colors.cardBackground,
-        flex: 1,
+        justifyContent: 'flex-start',       
+    },
+    cont:{
         
-        
-    },
-    name:{
-        fontSize: 18,
-        fontWeight:'bold',
-        color:colors.text,
-
-    },
-    nameDetalis:{
-        fontSize:15,
-        color:colors.gray,
-    },
-    imageStyle:{
-        width: 80,
-        height:"100%",
-        borderRadius: 40,
+        flex:1,
+        padding:10,
     }
 })
 

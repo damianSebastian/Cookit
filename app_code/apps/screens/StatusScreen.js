@@ -4,30 +4,32 @@ import {
     View,
     Text,
     StyleSheet,
-    StatusBar,
-    ScrollView
+    StatusBar
 } from 'react-native';
 
 import colors from '../config/colors';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-function StatusScreen({title, subtitle, image,inputColor="button"}) {
+function StatusScreen({inputColor="button"}) {
     return( 
-        <ScrollView style={style.background}>
-            
-            
-            <Image           
-                resizeMode ="contain"
-                style={style.backgroundImage}
-                source={require('../assets/cookit_logo.png')}
-                />
-            <MaterialCommunityIcons name="close" size={30} color={inputColor} style={style.leftComp}/> 
-            <MaterialCommunityIcons name="trash-can-outline" size={30} color={inputColor} style={style.rightComp}/>
         
-            
-
-        </ScrollView>
+        <View style={style.background}>
+          <MaterialCommunityIcons name="close" 
+          size={50} 
+          color={inputColor} 
+          style={style.leftComp}/> 
+          <MaterialCommunityIcons name="trash-can-outline"
+           size={50} 
+           color={inputColor} 
+           style={style.rightComp}/>
+          <Image           
+              resizeMode ="contain"
+             style={style.backgroundImage}
+              source={require('../assets/cookit_logo.png')}
+            />
+          
+        </View> 
     
     )
 };
@@ -55,7 +57,6 @@ const style = StyleSheet.create({
     backgroundImage :{
         height : "100%",
         width : "100%",
-        flex: 0.3,
     
     }
   })

@@ -13,13 +13,13 @@ const messages = [
         id:1,
         text:'My Listings',    
         iconName: "format-list-bulleted",
-        iconColor:colors.myListingColor,
+        iconColor:colors.purple,
     },
     {
         id:2,
         text:'My Messages',
         iconName: "email",
-        iconColor: colors.myMessagesColor,
+        iconColor: colors.purple,
     },
 ]
 
@@ -44,7 +44,7 @@ function MenuScreen(props) {
                        iconColor={item.iconColor}
                        onPress={() => Alert.alert("My Listings")}
                />}
-               ItemSeparatorComponent={ListSeparator} 
+              
             />           
 
             <MenuItem 

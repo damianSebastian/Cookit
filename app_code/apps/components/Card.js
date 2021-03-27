@@ -1,16 +1,15 @@
 import React from 'react';
-import {View, StyleSheet, Image,Text, TouchableOpacity, Alert} from 'react-native';
+import {View, StyleSheet, Image,Text, TouchableOpacity} from 'react-native';
 
-import colors from '../config/colors';
-
+import defaultProps from '../config/defaultProps';
 
 function Card({title, subtitle, image, onPress}) {
     return (
         <TouchableOpacity style={style.card} onPress={onPress}>
             <Image source={image} style={style.image}/>
             <View style={style.detailContainer}>
-                <Text style={style.title}>{title}</Text>
-                 <Text style={style.subtitle}>{subtitle}</Text>
+                <Text style={defaultProps.mainText}>{title}</Text>
+                 <Text style={defaultProps.descriptionText}>{subtitle}</Text>
             </View>
             
 
@@ -22,36 +21,14 @@ export default Card;
 
 const style=StyleSheet.create({
     card :{
-      backgroundColor : colors.cardBackground,
-      borderRadius: 15,
-      
+      backgroundColor : defaultProps.colors.cardBackground,
+      borderRadius: 15,    
       margin:20,
-      overflow:'hidden',
-      //flexDirection: 'row',
-      elevation:20,
-      shadowColor:'black',
-      shadowOpacity:1,
-      shadowRadius: 5,
-      shadowOffset:{width: 10, height: 10},
-      
+      overflow:'hidden',     
     },
     image: {
         width:"100%",
         height: 200,
-
-    },
-    title:{
-        fontSize: 25,
-        fontWeight : 'bold',
-        marginTop:5,
-        color:colors.text,
-    },
-    subtitle:{
-        fontSize: 20,
-        marginTop:5,
-        color:colors.lightText,
-        
-
     },
     detailContainer:{
       padding:10,

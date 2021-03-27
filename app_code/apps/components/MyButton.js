@@ -2,16 +2,16 @@ import React from 'react';
 import { 
     Text,
     StyleSheet,
-    Alert,
     TouchableOpacity,
     } from 'react-native';
-import colors from'../config/colors';
+import defaultProps from '../config/defaultProps';
 
-function MyButton({title, color ="button"}) {
+function MyButton({title, color ="button", onPress}) {
     return(
       
-          <TouchableOpacity style={[buttonStyel.LoginButton, {backgroundColor: colors[color]}]} onPress={() => Alert.alert(title)}>
-            <Text style={buttonStyel.buttonText}>{title}</Text>
+          <TouchableOpacity style={[buttonStyel.LoginButton, {backgroundColor: defaultProps.colors[color]}]}
+           onPress={onPress}>
+            <Text style={defaultProps.titletext}>{title}</Text>
 
           </TouchableOpacity>
 
@@ -20,22 +20,15 @@ function MyButton({title, color ="button"}) {
 
 export default MyButton;
 
-
-const buttonStyel = StyleSheet.create ({
-    
+const buttonStyel = StyleSheet.create ({  
     LoginButton : {
       width : '90%',
       height : 50,
-      backgroundColor: colors.button,
+      backgroundColor: defaultProps.colors.button,
       borderRadius : 25,
-      margin : 10,
+      margin : 5,
       justifyContent : 'center',
       alignItems : 'center',
-      
+      alignSelf: 'center',   
     },
-    buttonText : {
-      fontSize : 30,
-      fontWeight : 'bold',
-      color : colors.text,
-    }
   })

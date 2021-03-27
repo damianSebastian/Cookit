@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import colors from '../config/colors';
+import defaultProps from '../config/defaultProps';
 
 function ListSeparator() {
     return (
@@ -10,9 +10,9 @@ function ListSeparator() {
 
 const style=StyleSheet.create({
     separator:{
-        height:3,
+        height:2,
         width:"100%",
-        backgroundColor:'black',
+        backgroundColor:defaultProps.colors.button,
     }
 })
 

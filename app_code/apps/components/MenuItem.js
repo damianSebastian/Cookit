@@ -21,8 +21,11 @@ const styles = StyleSheet.create({
     background:{
         width: "100%",
         height: 70,
-        backgroundColor: colors.cardBackground,
+        backgroundColor: colors.mainBackground,
         justifyContent:'center',
+        borderColor:colors.cardBackground,
+        borderWidth: 3,
+        
 
     },
     text:{
