@@ -6,7 +6,6 @@ export default {
     colors,
     mainText: {
         color: colors.text,
-        
         ...Platform.select({
             ios: {
                 fontSize: 20,
@@ -17,6 +16,7 @@ export default {
                 fontFamily: "Roboto",
             }
         }),
+        
         
     },
     descriptionText : {

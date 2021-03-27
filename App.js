@@ -8,6 +8,7 @@ import WellcomeScreen from './app_code/apps/screens/WellcomeScreen';
 import StatusScreen from './app_code/apps/screens/StatusScreen';
 import MenuScreen from './app_code/apps/screens/MenuScreen';
 import PresentationProductScreen from './app_code/apps/screens/PresentationProductScreen';
+import TutorialScreen from './app_code/apps/screens/TutorialScreen';
 export default function App() {
   return (
     
@@ -17,14 +18,15 @@ export default function App() {
     // subtitle="sebastian"
     // image={require('./app_code/apps/assets/cookit_logo.png')}/>      nu e okkk
    // <MenuScreen/>             e okk
-   <PresentationProductScreen 
-    image={require('./app_code/apps/assets/cookit_logo.png')}
-    name="avram sebastian"
-    nameDetalis="pregatar"
-    profileImage={require('./app_code/apps/assets/cookit_logo.png')}
-    subtitle="ou"
-    title="mancare"
-   />
+  //  <PresentationProductScreen 
+  //   image={require('./app_code/apps/assets/cookit_logo.png')}
+  //   name="avram sebastian"
+  //   nameDetalis="pregatar"
+  //   profileImage={require('./app_code/apps/assets/cookit_logo.png')}
+  //   subtitle="ou"
+  //   title="mancare"
+  //  />
+  <TutorialScreen text="Text"/>
   );
 }
 

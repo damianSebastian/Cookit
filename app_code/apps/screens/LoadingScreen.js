@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Image } from 'react-native';
 
-import colors from '../config/colors';
+import defaultProps from '../config/defaultProps';
 
 
 function LoadingScreen(props) {
@@ -13,7 +13,7 @@ function LoadingScreen(props) {
 }
 const style=StyleSheet.create({
    backgound: {
-       backgroundColor: colors.mainBackground,
+       backgroundColor: defaultProps.colors.mainBackground,
        justifyContent: 'center',
        alignItems:'center',
    }
