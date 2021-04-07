@@ -21,7 +21,7 @@ export default Card;
 
 const style=StyleSheet.create({
     card :{
-      backgroundColor : defaultProps.colors.cardBackground,
+      backgroundColor : defaultProps.colors.secondBackground,
       borderRadius: 15,    
       margin:20,
       overflow:'hidden',     

@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     back:{
-        backgroundColor: defaultProps.colors.cardBackground,
+        backgroundColor: defaultProps.colors.secondBackground,
         borderRadius:30,
     }
 })

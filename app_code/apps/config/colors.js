@@ -1,13 +1,8 @@
 export default {
-    mainBackground: '#8aba32', // verde
-    cardBackground : 'rgb(255,231,21)', // galben
-    button: 'rgb(255,231,21)', // galben
-    gray:'rgb(73,73,73)', // gri
-    black : '#000',
-    white: '#efefef',
+    firstBackground: '#f2f2f2', // alb albus
+    secondBackground : '#cccccc', // gri umbra albus
+    button: '#ffa017', // galben
+    gray:'rgb(73,73,73)', // gri   
     text:'rgb(16,25,32)', // ablastru-inchis-negru
-    lightText:'#efefef', // alb
     purple: '#320d3e', // mov
-     
-
 }

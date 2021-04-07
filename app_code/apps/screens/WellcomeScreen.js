@@ -32,7 +32,7 @@ const firstStyle = StyleSheet.create ({
       height : "100%",
       justifyContent: 'flex-end',
       alignItems : 'center',
-      backgroundColor: defaultProps.colors.mainBackground, 
+      backgroundColor: defaultProps.colors.firstBackground, 
     },  
     logoAndText :{
       position : 'absolute',

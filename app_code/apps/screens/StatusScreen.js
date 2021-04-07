@@ -40,7 +40,7 @@ const style = StyleSheet.create({
     background: {
       flex : 1,
       flexDirection : 'column-reverse',
-      backgroundColor: colors.cardBackground,
+      backgroundColor: colors.secondBackground,
       alignItems : 'center',
       
     },

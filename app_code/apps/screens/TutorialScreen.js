@@ -43,7 +43,7 @@ function TutorialScreen({text}) {
 }
 const styles = StyleSheet.create({
     container:{
-            backgroundColor: defaultProps.colors.mainBackground,
+            backgroundColor: defaultProps.colors.firstBackground,
             justifyContent: 'center',
             alignItems:'center',
             flex:1,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         height:"70%"
     },
     timeStatus:{     
-         backgroundColor:defaultProps.colors.cardBackground,
+         backgroundColor:defaultProps.colors.secondBackground,
          height:"100%",
          width: 10, 
     },

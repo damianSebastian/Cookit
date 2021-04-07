@@ -26,7 +26,7 @@ const style=StyleSheet.create({
         height: 80,
         width:"100%",
         marginTop:10,
-        backgroundColor:defaultProps.colors.mainBackground,
+        backgroundColor:defaultProps.colors.firstBackground,
         flexDirection: 'row',
         justifyContent: 'flex-start',       
     },
