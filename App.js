@@ -12,12 +12,12 @@ import TutorialScreen from './app_code/apps/screens/TutorialScreen';
 export default function App() {
   return (
     
-    //<CardScreen/>                 e okk
-   //<WellcomeScreen/>               e okk
+    <CardScreen/>                 
+  //  <WellcomeScreen/>               
     // <StatusScreen title="avram"
     // subtitle="sebastian"
-    // image={require('./app_code/apps/assets/cookit_logo.png')}/>      nu e okkk
-   // <MenuScreen/>             e okk
+    // image={require('./app_code/apps/assets/cookit_logo.png')}/>     
+  //  <MenuScreen/>         e ok   
   //  <PresentationProductScreen 
   //   image={require('./app_code/apps/assets/cookit_logo.png')}
   //   name="avram sebastian"
@@ -26,15 +26,7 @@ export default function App() {
   //   subtitle="ou"
   //   title="mancare"
   //  />
-  <TutorialScreen text="Text"/>
+  // <TutorialScreen text="Text"/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

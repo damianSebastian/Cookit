@@ -2,9 +2,7 @@ import React from 'react';
 import { 
     Image,
     View,
-    Text,
     StyleSheet,
-    StatusBar
 } from 'react-native';
 
 import colors from '../config/colors';

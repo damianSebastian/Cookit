@@ -10,23 +10,26 @@ import defaultProps from '../config/defaultProps';
 
 function WellcomeScreen(props) {
   return(
-      
-        <View style={firstStyle.background}>
-          <View style ={firstStyle.logoAndText}>
-            <Image style={firstStyle.logo} source={require('../assets/cookit_logo.png')}></Image>
-            <Text style={firstStyle.text}>O aplicatie impresionanta!</Text>
+      <React.Fragment>
+        <View style={styles.background}>
+          <View style ={styles.logoAndText}>
+            <Image style={styles.logo} source={require('../assets/cookit_logo.png')} resizeMode='contain'></Image>
+            <Text style={defaultProps.mainText}>O aplicatie impresionanta!</Text>
           </View>
-          <MyButton title="Login" />
-          <MyButton title="Register" />
-  
         </View>
+
+        <View style={styles.buttons}>
+          <MyButton title="Login" size={140} />
+          <MyButton title="Register" size={140} />
+        </View>
+      </React.Fragment>
   
       )
 }
 
 export default WellcomeScreen;
     
-const firstStyle = StyleSheet.create ({
+const styles = StyleSheet.create ({
     background : {    
       width : "100%",
       height : "100%",
@@ -41,12 +44,14 @@ const firstStyle = StyleSheet.create ({
     },
     logo : {    
       width : 100,
-      height: 100, 
+      height: 160, 
     },
-    text : {
-      fontSize : 20,
-      fontWeight : 'bold',  
-      margin : 10, 
-      color : defaultProps.text,    
-    },
+    buttons: {
+      bottom: 60,
+       position:'absolute',
+        flexDirection: 'row', 
+        justifyContent:'space-around', 
+        width: "100%",
+    }
+
   })

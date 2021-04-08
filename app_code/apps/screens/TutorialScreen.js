@@ -15,28 +15,28 @@ function TutorialScreen({text}) {
                 <Image source={require('../assets/cookit_logo.png')}
                 resizeMode='contain'
                 style={styles.image}/>
-                <View style={styles.timer}>
-                    <View  
-                    style={styles.timeStatus}/>
-                    <MyButton width={60} 
+                <View style={styles.timer}/>
+
+                <View style={{flexDirection:'row'  ,justifyContent:'space-around',
+                 alignItems:'center', bottom: 30, position: 'absolute', width: "100%"
+                 }}>
+                    <Image 
+                        source={require('../assets/waiting_egg.png')}
+                        resizeMode='contain'
+                        style={styles.cookStatus}
+                    />
+                    <MyButton size={120} 
                     title="Start" 
-                    style={defaultProps.descriptionText}
-                    />
-                </View>
 
-                <View style={styles.nextStageButton}>
-                    <AppIconButtons iconName="arrow-right"
-                    size={50}
-                    />
-                    <AppText style={defaultProps.descriptionText} text="Next stage"/>
-                </View>
-                <Image 
-                    source={require('../assets/waiting_egg.png')}
-                    resizeMode='contain'
-                    style={styles.cookStatus}
-                />
+                    /> 
+                    <View style={styles.nextStageButton}>
+                        <AppIconButtons iconName="arrow-right"
+                        size={60}
+                        />
+                        <AppText style={defaultProps.descriptionText} text="Next stage"/>
+                    </View>
 
-                
+                </View>         
             </View>
         </Screen>
     );
@@ -56,29 +56,23 @@ const styles = StyleSheet.create({
          margin:10,
     },
     timer:{
-        left: 5,
+        top: 20,
         position:'absolute',               
         alignItems:'center',
-        height:"70%"
+        backgroundColor:defaultProps.colors.secondBackground,
+         width:"90%",
+         height: 10, 
     },
-    timeStatus:{     
-         backgroundColor:defaultProps.colors.secondBackground,
-         height:"100%",
-         width: 10, 
-    },
+
     nextStageButton: {
         justifyContent:'center',
          alignItems:'center',
-         right: 30,
-          bottom: 30,
-           position: 'absolute'
+
     },
     cookStatus: {
-        height: 70,
-         width: 70,
-          right:20, 
-          top: 20,
-           position:'absolute'
+        height: 80,
+         width: 80,
+
     }
 })
 

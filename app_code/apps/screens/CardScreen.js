@@ -36,6 +36,7 @@ function CardScreen(props) {
     return (
         <Screen>
             <FlatList
+                
                 data={messages}
                 keyExtractor={(message) => message.id.toString()}
                 renderItem={({item}) =>

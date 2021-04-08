@@ -6,10 +6,10 @@ import {
     } from 'react-native';
 import defaultProps from '../config/defaultProps';
 
-function MyButton({title, onPress, width="80%", style=defaultProps.titletext}) {
+function MyButton({title, onPress, size=100, style=defaultProps.titletext}) {
     return(
       
-          <TouchableOpacity style={[buttonStyel.LoginButton, {width:width}]}
+          <TouchableOpacity style={[buttonStyel.LoginButton, {width:size, height: size, borderRadius: size/2}]}
            onPress={onPress}>
             <Text style={style}>{title}</Text>
 
@@ -22,10 +22,7 @@ export default MyButton;
 
 const buttonStyel = StyleSheet.create ({  
     LoginButton : {
-      
-      height : 50,
       backgroundColor: defaultProps.colors.button,
-      borderRadius : 25,
       margin : 5,
       justifyContent : 'center',
       alignItems : 'center',

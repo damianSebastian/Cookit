@@ -14,7 +14,7 @@ function PresentationProductScreen({image, profileImage, title,subtitle,name,nam
                 <AppIconButtons iconName="arrow-left" 
                 style={style.iconStyle}
                 onPress={() =>Alert.alert("msg")}/>
-                <Image style={style.image} resizeMode='cover' source={image}/>
+                <Image style={style.image} resizeMode='contain' source={image}/>
                 <View style={style.description}>
                     <Text style={defaultProps.titletext}>{title}</Text>
                     <Text style={defaultProps.mainText}>{subtitle}</Text>
@@ -26,6 +26,7 @@ function PresentationProductScreen({image, profileImage, title,subtitle,name,nam
                 onPress={() => Alert.alert("msg")}
                 />
                 <MyButton title="Start"
+                size={120}
                 onPress={() => Alert.alert("msg")} />         
             </View>
 
@@ -38,8 +39,7 @@ export default PresentationProductScreen;
 
 const style=StyleSheet.create({
     container:{
-        flex:1,
-        //backgroundColor: defaultProps.colors.mainBackground,          
+        flex:1,         
     },
     image :{
         height:300,
