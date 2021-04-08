@@ -11,37 +11,40 @@ import defaultProbs from './app_code/apps/config/defaultProps';
 const Cards = () => {
   const navigation = useNavigation();
   return <CardScreen onPress={() => 
-    navigation.navigate("Presentation")}/>  //, {parametrii pentru fiecare card prezentat card prezentat}, vor fi mai multe carduri
+    navigation.navigate("Presentation")}/>  // {parametrii pentru fiecare card prezentat card prezentat}, vor fi mai multe carduri
     
 }
 //pot folosi route.prams.variabila pentru a da date de la un screen la altul
-const Presentation =({route}) => {
+const Presentation =() => {
     const navigation = useNavigation();
-    return <PresentationProductScreen name="test" nameDetalis="test"
-    image={require('./app_code/apps/assets/cookit_logo.png')}
-    profileImage={require('./app_code/apps/assets/cookit_logo.png')}
+    return <PresentationProductScreen 
+    image={require('./app_code/apps/covers/carbonara.jpg')}
     title="test"
     subtitle="test"
     onPress = {() => navigation.navigate("Tutorial")}
     />
 }
 
-const Tutorial = () => { return  <TutorialScreen />}
+const Tutorial = () => { 
+  const navigation = useNavigation();
+  return  <TutorialScreen text="ana are mere"
+  nextOnPress={() => navigation.navigate("Cards")}
+  />}
 
 const MyStack = createStackNavigator();
 const MyStackNavigator = () => (
   <MyStack.Navigator initialRouteName="Cards">
     <MyStack.Screen name="Cards" component={Cards} options={{title: "Cook your egg",
     headerTitleAlign: 'center',
-     headerStyle:{backgroundColor: defaultProbs.colors.button}}}/>
+     headerStyle:{backgroundColor: defaultProbs.colors.lightButton}}}/>
     <MyStack.Screen name="Presentation" component={Presentation}
     options={{title: "Cook your egg",
     headerTitleAlign: 'center',
-     headerStyle:{backgroundColor: defaultProbs.colors.button}}}/>
+     headerStyle:{backgroundColor: defaultProbs.colors.lightButton}}}/>
     <MyStack.Screen name="Tutorial" component={Tutorial} 
     options={{title: "Cook your egg",
     headerTitleAlign: 'center',
-     headerStyle:{backgroundColor: defaultProbs.colors.button}}}/>
+     headerStyle:{backgroundColor: defaultProbs.colors.lightButton}}}/>
 
   </MyStack.Navigator>
 )

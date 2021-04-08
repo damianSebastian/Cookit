@@ -1,85 +1,102 @@
 import React from 'react';
-import { View, StyleSheet, Image, Alert } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 
 import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
 import Screen from '../components/Screen';
 import AppIconButtons from '../components/AppIconButtons';
 import MyButton from '../components/MyButton';
+import { ScrollView } from 'react-native-gesture-handler';
 
-function TutorialScreen({text}) {
+function TutorialScreen({text, nextOnPress, previosuOnPress}) {
+
     return (
         <Screen>
             <View style={styles.container}>
-                <AppText style={defaultProps.titletext} text={text}/>
-                <Image source={require('../assets/cookit_logo.png')}
-                resizeMode='contain'
-                style={styles.image}/>
-                <View style={styles.timer}/>
-
-                <View style={styles.buttons}>
+                <View style={styles.statusBar}>
+                    <View style={styles.timer}/>
                     <Image 
                         source={require('../assets/waiting_egg.png')}
                         resizeMode='contain'
                         style={styles.cookStatus}
-                    />
-                    <MyButton size={120} 
-                    title="Start" 
-
-                    /> 
-                    <View style={styles.nextStageButton}>
-                        <AppIconButtons iconName="arrow-right"
-                        size={60}
                         />
-                        <AppText style={defaultProps.descriptionText} text="Next stage"/>
-                    </View>
+                </View>
+                <View style={styles.info} >
+                    <ScrollView contentContainerStyle={{alignItems:'center'}}>
+                        <AppText style={defaultProps.mainText}
+                        text={text}/> 
+                        
+                    </ScrollView>
 
+                </View>
+                
+                <Image source={require('../assets/oala_pe_foc.png')}
+                resizeMode='contain'
+                style={styles.image}/>
+
+                <View style={styles.buttons}>
+                    <AppIconButtons iconName="arrow-left"
+                        size={60}
+                        onPress={previosuOnPress}/>
+                    <MyButton 
+                    title="Start"
+                    
+                    /> 
+                    <AppIconButtons iconName="arrow-right"
+                        size={60}
+                        onPress={nextOnPress}/>
+ 
                 </View>         
             </View>
         </Screen>
     );
 }
+
 const styles = StyleSheet.create({
     container:{
-            backgroundColor: defaultProps.colors.firstBackground,
-            justifyContent: 'center',
-            alignItems:'center',
-            flex:1,
-            
+        backgroundColor: defaultProps.colors.firstBackground,
+        flexDirection: 'column', 
+        alignItems:'center',
+        flex:1,          
     },
+    text:{
+        margin: 10,
+    },
+
     image:{
         width: 200,
-        height:200,
-         top: 50,
-         margin:10,
+        height:200,      
+         margin:5,
     },
-    timer:{
-        top: 20,
-        position:'absolute',               
-        alignItems:'center',
+    statusBar:{
+        alignItems: 'center',      
+        top: 10,         
+        width:"100%",                  
+    },
+    timer:{    
         backgroundColor:defaultProps.colors.secondBackground,
          width:"90%",
          height: 10, 
     },
-
-    nextStageButton: {
-        justifyContent:'center',
-         alignItems:'center',
-
-    },
     cookStatus: {
-        height: 80,
+        height: 60,
          width: 80,
-
-    },
+         margin: 5,
+     },
     buttons :{
         flexDirection:'row',
-        justifyContent:'space-around',
-        alignItems:'center', 
-        bottom: 30, 
+        justifyContent:'space-between',
+        alignItems:'flex-end', 
+        bottom: 10, 
         position: 'absolute', 
-        width: "100%"
-    }
+        width: "100%",
+        paddingHorizontal: 5,
+    },
+    info:{
+        width: "80%",
+        height: 200,       
+        marginVertical: 10,
+    },
 })
 
 export default TutorialScreen;

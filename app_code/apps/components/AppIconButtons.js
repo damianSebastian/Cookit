@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     back:{
-        backgroundColor: defaultProps.colors.secondBackground,
+        backgroundColor: defaultProps.colors.button,
         borderRadius:30,
     }
 })

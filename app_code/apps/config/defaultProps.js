@@ -8,11 +8,11 @@ export default {
         color: colors.text,
         ...Platform.select({
             ios: {
-                fontSize: 20,
+                fontSize: 24,
                 fontFamily: "Avenir",
             },
             android : {
-                fontSize:18,
+                fontSize:22,
                 fontFamily: "Roboto",
             }
         }),
