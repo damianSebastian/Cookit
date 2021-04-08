@@ -26,6 +26,6 @@ const buttonStyel = StyleSheet.create ({
       margin : 5,
       justifyContent : 'center',
       alignItems : 'center',
-      alignSelf: 'center',   
+         
     },
   })

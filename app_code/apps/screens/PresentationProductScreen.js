@@ -7,14 +7,12 @@ import AppIconButtons from '../components/AppIconButtons';
 import Screen from '../components/Screen';
 import MyButton from '../components/MyButton';
 
-function PresentationProductScreen({image, profileImage, title,subtitle,name,nameDetalis }) {
+function PresentationProductScreen({image, profileImage, title,subtitle,name,nameDetalis, onPress }) {
     return (
         <Screen>
-            <View style={style.container}>
-                <AppIconButtons iconName="arrow-left" 
-                style={style.iconStyle}
-                onPress={() =>Alert.alert("msg")}/>
-                <Image style={style.image} resizeMode='contain' source={image}/>
+            <View >
+                
+                <Image style={style.image} resizeMode='cover' source={image}/>
                 <View style={style.description}>
                     <Text style={defaultProps.titletext}>{title}</Text>
                     <Text style={defaultProps.mainText}>{subtitle}</Text>
@@ -25,12 +23,18 @@ function PresentationProductScreen({image, profileImage, title,subtitle,name,nam
                 profileImage={profileImage}
                 onPress={() => Alert.alert("msg")}
                 />
-                <MyButton title="Start"
-                size={120}
-                onPress={() => Alert.alert("msg")} />         
+                        
             </View>
 
+            <View style ={{ alignItems: 'center'}}>
+                <MyButton title="Start"
+                    size={120}
+                    onPress={onPress} 
+                    /> 
+            </View>
         </Screen>
+
+        
 
     );
 }
@@ -50,9 +54,5 @@ const style=StyleSheet.create({
         height: 80,
         width:"100%",       
     },
-    iconStyle:{
-        top:40,
-        left:20,
-        position:'absolute',
-    }
+
 })

@@ -32,7 +32,7 @@ const messages = [
     },
 ]
 
-function CardScreen(props) {
+function CardScreen({onPress}) {
     return (
         <Screen>
             <FlatList
@@ -43,7 +43,8 @@ function CardScreen(props) {
                 <Card
                     title={item.title}
                     subtitle={item.subtitle}
-                    image={item.image}/>} />
+                    image={item.image}
+                    onPress={onPress}/>} />
 
         </Screen>
         

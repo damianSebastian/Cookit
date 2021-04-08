@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
+import defaultProps from '../config/defaultProps';
 
 import Constants from 'expo-constants';
 
@@ -11,7 +12,7 @@ function Screen({children}) {
 }
 const style=StyleSheet.create({
     container:{
-        paddingTop: Constants.statusBarHeight,
+        backgroundColor: defaultProps.colors.secondBackground,
         flex:1,
     }
 })

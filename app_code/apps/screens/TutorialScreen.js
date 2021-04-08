@@ -17,9 +17,7 @@ function TutorialScreen({text}) {
                 style={styles.image}/>
                 <View style={styles.timer}/>
 
-                <View style={{flexDirection:'row'  ,justifyContent:'space-around',
-                 alignItems:'center', bottom: 30, position: 'absolute', width: "100%"
-                 }}>
+                <View style={styles.buttons}>
                     <Image 
                         source={require('../assets/waiting_egg.png')}
                         resizeMode='contain'
@@ -73,6 +71,14 @@ const styles = StyleSheet.create({
         height: 80,
          width: 80,
 
+    },
+    buttons :{
+        flexDirection:'row',
+        justifyContent:'space-around',
+        alignItems:'center', 
+        bottom: 30, 
+        position: 'absolute', 
+        width: "100%"
     }
 })
 
