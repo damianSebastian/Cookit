@@ -10,7 +10,7 @@ function ListSeparator() {
 
 const style=StyleSheet.create({
     separator:{
-        height:2,
+        height:10,
         width:"100%",
         backgroundColor:defaultProps.colors.secondBackground,
     }

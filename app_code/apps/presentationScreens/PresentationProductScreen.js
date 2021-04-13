@@ -22,6 +22,7 @@ function PresentationProductScreen({route, navigation}) {
                 </View>
 
                 <View>
+                    <ListSeparator/>
                     <AppText style={defaultProps.mainText} text={listing.ingredients}/>
 
                     <ListSeparator />
