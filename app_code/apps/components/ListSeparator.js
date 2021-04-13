@@ -12,7 +12,7 @@ const style=StyleSheet.create({
     separator:{
         height:2,
         width:"100%",
-        backgroundColor:defaultProps.colors.button,
+        backgroundColor:defaultProps.colors.secondBackground,
     }
 })
 

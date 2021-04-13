@@ -7,7 +7,6 @@ import Constants from 'expo-constants';
 function Screen({children}) {
     return (
         <SafeAreaView style={style.container}>{children}</SafeAreaView>
-
     );
 }
 const style=StyleSheet.create({

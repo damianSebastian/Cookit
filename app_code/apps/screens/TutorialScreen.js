@@ -7,9 +7,9 @@ import Screen from '../components/Screen';
 import AppIconButtons from '../components/AppIconButtons';
 import MyButton from '../components/MyButton';
 import { ScrollView } from 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 
-function TutorialScreen({text, nextOnPress, previosuOnPress}) {
-
+function TutorialScreen({text, previosuOnPress,image, onPressStart}) {
     return (
         <Screen>
             <View style={styles.container}>
@@ -30,7 +30,7 @@ function TutorialScreen({text, nextOnPress, previosuOnPress}) {
 
                 </View>
                 
-                <Image source={require('../assets/oala_pe_foc.png')}
+                <Image source={image}
                 resizeMode='contain'
                 style={styles.image}/>
 
@@ -40,14 +40,12 @@ function TutorialScreen({text, nextOnPress, previosuOnPress}) {
                         onPress={previosuOnPress}/>
                     <MyButton 
                     title="Start"
-                    
+                        onPress={onPressStart}
                     /> 
-                    <AppIconButtons iconName="arrow-right"
-                        size={60}
-                        onPress={nextOnPress}/>
- 
-                </View>         
+                </View>  
+
             </View>
+
         </Screen>
     );
 }

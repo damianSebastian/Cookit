@@ -52,7 +52,7 @@ function MessagesScreen() {
                         id:2,
                         title:'T2',
                         description:'D2',
-                        image: require('../assets/logo.png'),
+                        image: require('../assets/cookit_logo.png'),
                         },
                 ]);
              }}   
