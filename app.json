@@ -4,9 +4,9 @@
     "slug": "Cookit",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app_code/apps/assets/cookit_logo.png",
+    "icon": "./app/assets/cookit_logo.png",
     "splash": {
-      "image": "./app_code/apps/assets/waiting_egg.png" ,
+      "image": "./app/assets/waiting_egg.png" ,
       "resizeMode": "contain",
       "backgroundColor": "#f2f2f2"
       
@@ -22,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app_code/apps/assets/waiting_egg.png",
+        "foregroundImage": "./app/assets/waiting_egg.png",
         "backgroundColor": "#f2f2f2"
       }
     },
     "web": {
-      "favicon": "./app_code/apps/assets/cookit_logo.png"
+      "favicon": "./app/assets/cookit_logo.png"
     }
   }
 }

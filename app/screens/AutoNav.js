@@ -1,11 +1,10 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import WellcomeScreen from '../screens/WellcomeScreen';
-import CardScreen from '../screens/CardScreen';
-import PresentationProductScreen from '../presentationScreens/PresentationProductScreen';
-import TutorialScreen from '../screens/TutorialScreen';
-import TutorialNavigationCookOne from './TutorialNavigationCookOne';
+import WellcomeScreen from './WellcomeScreen';
+import CardScreen from './CardScreen';
+import PresentationProductScreen from './PresentationProductScreen';
+import TutorialScreen from './TutorialScreen';
 import defaultProps from '../config/defaultProps';
 
 const Stack = createStackNavigator();
@@ -22,14 +21,12 @@ const AutoNav = () => (
         options={{title: "Cook your egg",
         headerTitleAlign: 'center',
         headerLeft: false,
-         headerStyle:{backgroundColor: defaultProps.colors.lightButton, height: 60}}} />
-         <Stack.Screen name="TutorialOne" component ={TutorialNavigationCookOne} options={{headerShown: false}}/> 
-         {/* // aici am nevoie de alt navigator, cate unul pt fiecare card */}
-         
-          {/* <Stack.Screen name="Tutorial" component ={TutorialScreen} // aici am nevoie de alt navigator, cate unul pt fiecare card
+         headerStyle:{backgroundColor: defaultProps.colors.lightButton, height: 60}}} />         
+         <Stack.Screen name="Tutorial" component ={TutorialScreen}
          options={{title: "Cook your egg",
          headerTitleAlign: 'center',
-          headerStyle:{backgroundColor: defaultProps.colors.lightButton}}}/> */}
+         headerLeft: false,
+          headerStyle:{backgroundColor: defaultProps.colors.lightButton, height: 60}}}/>
     </Stack.Navigator>
 )
 

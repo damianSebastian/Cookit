@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import Screen from '../components/Screen';
 import datas from '../config/data';
 
-
 function CardScreen({navigation}) {
     return (
         <Screen>
@@ -18,12 +17,11 @@ function CardScreen({navigation}) {
                     title={item.title}
                     subtitle={item.subtitle}
                     image={item.image}
-                    onPress={() => navigation.navigate(item.targetDescriptionScreen,item)}/>} />
+                    onPress={() => navigation.navigate("Presentation",item)}/>} />
 
         </Screen>
         
     );
 }
-
 
 export default CardScreen;
