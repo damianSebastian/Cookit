@@ -6,6 +6,7 @@ import CardScreen from './CardScreen';
 import PresentationProductScreen from './PresentationProductScreen';
 import TutorialScreen from './TutorialScreen';
 import defaultProps from '../config/defaultProps';
+import Finish from './Finish'
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,8 @@ const AutoNav = () => (
          headerTitleAlign: 'center',
          headerLeft: false,
           headerStyle:{backgroundColor: defaultProps.colors.lightButton, height: 60}}}/>
+          <Stack.Screen name ="Final" component= {Finish}
+           options={{headerShown: false}}/>
     </Stack.Navigator>
 )
 

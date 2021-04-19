@@ -6,7 +6,9 @@ import Screen from '../components/Screen';
 import defaultProps from '../config/defaultProps';
 
 
-function Finish() {
+function Finish({navigation}) {
+  setTimeout(() => navigation.navigate("Cards"),4000);
+
     return (
         <Screen>
             <View style={styles.background}>

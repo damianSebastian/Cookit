@@ -16,8 +16,7 @@ function TutorialScreen({route}) {
     const [step, setStep] = useState(0);
     const [button, setButton] = useState('Start');
     if(step === item.steps.lenght+ 1) {
-        setTimeout(() => navigation.navigate("Cards"),4000);
-        return <Finish />
+        setTimeout(() => navigation.navigate("Finish"),4000);
 
     } else {
         
