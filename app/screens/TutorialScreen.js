@@ -3,25 +3,26 @@ import { View, StyleSheet, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useState } from 'react';
 
-
 import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
 import Screen from '../components/Screen';
 import AppIconButtons from '../components/AppIconButtons';
 import MyButton from '../components/MyButton';
-import Finish from './Finish';
 
-function TutorialScreen({route}) {
+function TutorialScreen({route, navigation}) {
     const item = route.params;
-    const [step, setStep] = useState(0);
-    const [button, setButton] = useState('Start');
-    if(step === item.steps.lenght+ 1) {
-        setTimeout(() => navigation.navigate("Finish"),4000);
+    
+    const [step,setStep] = useState(0);
+   const [button, setButton] = useState('Start');
+    console.log(step+ ", "+ item.steps.length);
 
-    } else {
+    if(step === item.steps.length+1 ) {
+        navigation.navigate("Finish");
+    }   
+    
         
-        const handleOnPressStart = button === 'Finish' ? () => {setStep(step + 1); setButton('Start')}: () => setButton('Finish') //aici pun si start timer
-        const handlePreviousOnPress = step === 0 ? null : () => setStep(step - 1)
+    const handleOnPressStart = button === 'Finish' ? () => {setStep(step + 1); setButton('Start')}: () => setButton('Finish');
+    const handlePreviousOnPress = step === 0 ? null : () => setStep(step - 1);
         return (
             <Screen>
                 <View style={styles.container}>
@@ -61,7 +62,7 @@ function TutorialScreen({route}) {
 
             </Screen>
         );
-  }
+  
 }
 
 
