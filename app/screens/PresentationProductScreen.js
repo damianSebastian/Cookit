@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, View, StyleSheet,Text} from 'react-native';
+import { Image, View, StyleSheet} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import defaultProps from '../config/defaultProps';

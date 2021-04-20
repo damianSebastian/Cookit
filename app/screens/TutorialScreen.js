@@ -2,6 +2,8 @@ import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useState } from 'react';
+import {Timer} from 'react-native-stopwatch-timer';
+
 
 import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
@@ -11,51 +13,79 @@ import MyButton from '../components/MyButton';
 
 function TutorialScreen({route, navigation}) {
     const item = route.params;
-    
-    const [step,setStep] = useState(0);
-   const [button, setButton] = useState('Start');
-    console.log(step+ ", "+ item.steps.length);
+    const [allValues, setAllValues] = useState({
+        step: 0,
+        button: 'Start',
+        isTimerStart: false,
+        resetTimer: false,
+    });
 
-    if(step === item.steps.length+1 ) {
-        navigation.navigate("Finish");
-    }   
-    
         
-    const handleOnPressStart = button === 'Finish' ? () => {setStep(step + 1); setButton('Start')}: () => setButton('Finish');
-    const handlePreviousOnPress = step === 0 ? null : () => setStep(step - 1);
+    const handleOnPressStart =() => {
+        
+        if(allValues.button === 'Finish') {
+            if(allValues.step === item.steps.length - 1 ) { 
+                navigation.navigate("Finish");
+            } else {
+                 setAllValues({ step : allValues.step + 1,button : 'Start', isTimerStart : false, resetTimer: true })
+                 
+            }
+        } else {
+            setAllValues({...allValues,button : 'Finish', isTimerStart: !allValues.isTimerStart, resetTimer : false})
+            
+        }
+    }
+
+    const handlePreviousOnPress = allValues.step === 0 ? null : () => 
+    setAllValues({...allValues, step : allValues.step - 1 ,isTimerStart: false, resetTimer : true});
+    
+
         return (
             <Screen>
                 <View style={styles.container}>
                     <View style={styles.statusBar}>
-                        <View style={styles.timer}/>
-                        <Image 
-                            source={item.steps[step].statusImage}
+                        <View >
+                            <Timer
+                            totalDuration={10000} //item.steps[allValues.step].duration
+                            msecs
+                            start={allValues.isTimerStart}                           
+                            reset={allValues.resetTimer}                           
+                                                
+                            handleFinish={handleOnPressStart}                      
+                            />                  
+
+                        </View>
+                            <Image 
+                            source={item.steps[allValues.step].statusImage}
                             resizeMode='contain'
                             style={styles.cookStatus}
                             />
-                    </View>
-                    <View style={styles.info} >
+                        
+                        </View>
+                        <View style={styles.info} >
                         <ScrollView contentContainerStyle={{alignItems:'center'}}>
                             <AppText style={defaultProps.mainText}
-                            text={item.steps[step].text}/> 
+                            text={item.steps[allValues.step].text}/> 
                             
                         </ScrollView>
 
-                    </View>
+                        </View>
                     
-                    <Image source={item.steps[step].image}
-                    resizeMode='contain'
-                    style={styles.image}/>
+                        <Image source={item.steps[allValues.step].image}
+                        resizeMode='contain'
+                        style={styles.image}/>
 
-                    <View style={styles.buttons}>
-                        <AppIconButtons iconName="arrow-left"
+                        <View style={styles.buttons}>
+                            <AppIconButtons iconName="arrow-left"
                             size={60}
                             onPress={handlePreviousOnPress}/>
-                        <MyButton 
-                            title={button}
-
+                            
+                            <MyButton 
+                            title={allValues.button}
+                             
                             onPress={handleOnPressStart}
                         /> 
+                        
                     </View>  
 
                 </View>
@@ -110,6 +140,14 @@ const styles = StyleSheet.create({
         height: 200,       
         marginVertical: 10,
     },
+    timer: {
+        backgroundColor: defaultProps.colors.button,
+        padding: 5,
+        borderRadius: 10,
+        width: 200,
+        height: 20,
+        alignItems: 'center',
+      },
 })
 
 export default TutorialScreen;

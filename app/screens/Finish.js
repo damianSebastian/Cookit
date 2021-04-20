@@ -1,37 +1,36 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
 
 import AppText from '../components/AppText';
-import Screen from '../components/Screen';
 import defaultProps from '../config/defaultProps';
+import imageLoc from '../config/imagesLocation';
 
 
 function Finish({navigation}) {
   setTimeout(() => navigation.navigate("Cards"),4000);
 
     return (
-        <Screen>
-            <View style={styles.background}>
-                <Image style={styles.logo} source={imageLoc.finish} resizeMode='contain'></Image>
-                <AppText text="Finish"/>              
-            </View>
-        </Screen>
+
+        <View style={styles.background}>
+          <AppText text="Finish screen"/>             
+
+          <Image style={styles.logo} source={imageLoc.finish} resizeMode="contain"></Image> 
+        </View> 
+
         
     );
 }
 const styles = StyleSheet.create ({
-    background : {    
-      width : "100%",
-      height : "100%",
-      justifyContent: 'flex-end',
-      alignItems : 'center',
-      backgroundColor: defaultProps.colors.firstBackground, 
-    },  
-    logo : {    
-      width : 400,
-      height: 400,
-      bottom: "30%", 
-    }
-  })
-
+  background : {     
+    alignItems : 'center',  
+    justifyContent:'center',
+    backgroundColor: defaultProps.colors.firstBackground,  
+    flex:1, 
+  },  
+  logo : {    
+    width : 400,
+    height : 400,   
+    margin: 20,
+  }
+})
 export default Finish;

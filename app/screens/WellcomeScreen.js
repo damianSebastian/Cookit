@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import {
     Image,
     View,
@@ -14,7 +13,7 @@ function WellcomeScreen({navigation}) {
 
   return( 
     <View style={styles.background}>
-      <Image style={styles.logo} source={imageLoc.logo} resizeMode='contain'></Image>              
+      <Image style={styles.logo} source={imageLoc.logo} ></Image>              
     </View> 
   )
 }
@@ -22,16 +21,15 @@ function WellcomeScreen({navigation}) {
 export default WellcomeScreen;
     
 const styles = StyleSheet.create ({
-    background : {    
-      width : "100%",
-      height : "100%",
-      justifyContent: 'flex-end',
-      alignItems : 'center',
+  
+    background : {       
+      alignItems : 'center',     
       backgroundColor: defaultProps.colors.firstBackground, 
     },  
+
     logo : {    
       width : 400,
-      height: 400,
-      bottom: "25%", 
+      height : 400,   
+      top: "50%",   
     }
   })
