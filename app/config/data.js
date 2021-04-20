@@ -15,52 +15,63 @@ export default [
                 text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
                 text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step5,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul6",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step6,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul7",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step7,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul8",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step8,
+                time: 10000,
             },
+            
             {
                 text:" se aprinde aragazul9",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step9,
+                time: 10000,
             },
             {
                 text:" se aprinde aragazul10",
                 image: require('../covers/carbonara.jpg'),
                 statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
         
@@ -76,29 +87,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -113,29 +161,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -150,29 +235,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -187,29 +309,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -224,29 +383,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -261,29 +457,66 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
             },
         ]
     } ,
@@ -298,30 +531,67 @@ export default [
         steps: [
             {
                 
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul1",
                 image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step1,
+                time: 10000,
 
             },
             {
-                text:" se stinge aragazul",
+                text:" se stinge aragazul2",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step2,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul3",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step3,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul4",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step4,
+                time: 10000,
             },
             {
-                text:" se aprinde aragazul",
+                text:" se aprinde aragazul5",
                 image: require('../covers/carbonara.jpg'),
-
+                statusImage : imageLoc.step5,
+                time: 10000,
             },
-        ] 
+            {
+                text:" se aprinde aragazul6",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step6,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul7",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step7,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul8",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step8,
+                time: 10000,
+            },
+            
+            {
+                text:" se aprinde aragazul9",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step9,
+                time: 10000,
+            },
+            {
+                text:" se aprinde aragazul10",
+                image: require('../covers/carbonara.jpg'),
+                statusImage : imageLoc.step10,
+                time: 10000,
+            },
+        ]
     } ,
 ]

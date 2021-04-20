@@ -42,33 +42,38 @@ function TutorialScreen({route, navigation}) {
 
         return (
             <Screen>
+
                 <View style={styles.container}>
+
                     <View style={styles.statusBar}>
+
                         <View >
+                            
                             <Timer
-                            totalDuration={10000} //item.steps[allValues.step].duration
-                            msecs
+                            totalDuration={item.steps[allValues.step].time}
                             start={allValues.isTimerStart}                           
                             reset={allValues.resetTimer}                           
-                                                
+                            options={options}                   
                             handleFinish={handleOnPressStart}                      
                             />                  
 
                         </View>
+
                             <Image 
                             source={item.steps[allValues.step].statusImage}
                             resizeMode='contain'
                             style={styles.cookStatus}
-                            />
-                        
+                            />                      
                         </View>
+
                         <View style={styles.info} >
-                        <ScrollView contentContainerStyle={{alignItems:'center'}}>
+
+                            <ScrollView contentContainerStyle={{alignItems:'center'}}>
+
                             <AppText style={defaultProps.mainText}
                             text={item.steps[allValues.step].text}/> 
                             
-                        </ScrollView>
-
+                            </ScrollView>
                         </View>
                     
                         <Image source={item.steps[allValues.step].image}
@@ -76,13 +81,13 @@ function TutorialScreen({route, navigation}) {
                         style={styles.image}/>
 
                         <View style={styles.buttons}>
+
                             <AppIconButtons iconName="arrow-left"
                             size={60}
-                            onPress={handlePreviousOnPress}/>
-                            
+                            onPress={handlePreviousOnPress}/> 
+
                             <MyButton 
-                            title={allValues.button}
-                             
+                            title={allValues.button}                            
                             onPress={handleOnPressStart}
                         /> 
                         
@@ -95,6 +100,19 @@ function TutorialScreen({route, navigation}) {
   
 }
 
+const options = {
+    container: {
+      backgroundColor: defaultProps.colors.button,
+      padding: 5,
+      borderRadius: 30,
+      width: 200,
+      alignItems: 'center',
+    },
+    text: {
+      fontSize: 30,
+      color: defaultProps.colors.firstBackground,
+    }
+  };
 
 const styles = StyleSheet.create({
     container:{
@@ -140,14 +158,6 @@ const styles = StyleSheet.create({
         height: 200,       
         marginVertical: 10,
     },
-    timer: {
-        backgroundColor: defaultProps.colors.button,
-        padding: 5,
-        borderRadius: 10,
-        width: 200,
-        height: 20,
-        alignItems: 'center',
-      },
 })
 
 export default TutorialScreen;
