@@ -21,5 +21,5 @@ export default {
     step8 : require('../assets/statusEgg/step8.png'),
     step9 : require('../assets/statusEgg/step9.png'),
     step10 : require('../assets/statusEgg/step10.png'),
-    finish : require('../assets/statusEgg/finish.png'),
+    finish : require('../assets/finish.png'),
 }
