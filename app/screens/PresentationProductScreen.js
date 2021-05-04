@@ -6,6 +6,7 @@ import defaultProps from '../config/defaultProps';
 import MyButton from '../components/MyButton';
 import AppText from '../components/AppText';
 import ListSeparator from '../components/ListSeparator';
+import imageLoc from '../config/imagesLocation';
 
 function PresentationProductScreen({route, navigation}) {
     const item = route.params;
@@ -14,25 +15,32 @@ function PresentationProductScreen({route, navigation}) {
             
                 <Image style={style.image} resizeMode='cover' source={item.image}/>
 
-                <View style={style.description}>
-                    <AppText style={defaultProps.titletext} text={item.title}/>
-                    <AppText style={defaultProps.mainText} text={item.subtitle}/>
-                </View>
+                
+                    <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={item.title}/>
+                    <AppText style={[defaultProps.mainText, {marginLeft: 10}]} text={item.subtitle}/>
+                
 
-                <View>
+                
                     <ListSeparator/>
-                    <AppText style={defaultProps.mainText} text={item.ingredients}/>
+                    <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={"Ingredients"}/>
+                    <AppText style={[defaultProps.mainText, {marginLeft: 10}]} text={item.ingredients}/>
 
                     <ListSeparator />
 
-                    <AppText style={defaultProps.mainText} text={item.ustensile}/>
+                    <AppText text="Ustensile:" style={[defaultProps.titletext,{marginLeft: 20}]}/>
+                    <AppText text = {item.ustensile} style={[defaultProps.mainText,{marginLeft: 10}]}/>
+                    
+                    <View style={{flexDirection: 'row'}}>
+                            {item.imaginiUstensile.map((it) => 
+                            <Image source={it.image} key={it.id} style={{height:70, width:70, margin: 10}} resizeMode="contain"/>)}
+                    </View>
 
                     <ListSeparator />
 
                     <AppText style={defaultProps.titletext} text={item.totalTime}/>
 
                     <ListSeparator/>
-                </View>
+                
 
 
                 <View style ={{ alignItems: 'center'}}>

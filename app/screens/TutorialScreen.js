@@ -1,13 +1,10 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { useState } from 'react';
 import {Timer} from 'react-native-stopwatch-timer';
-
 
 import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
-import Screen from '../components/Screen';
 import AppIconButtons from '../components/AppIconButtons';
 import MyButton from '../components/MyButton';
 
@@ -25,9 +22,11 @@ function TutorialScreen({route, navigation}) {
         
         if(allValues.button === 'Finish') {
             if(allValues.step === item.steps.length - 1 ) { 
+                
                 navigation.navigate("Finish");
+
             } else {
-                 setAllValues({ step : allValues.step + 1,button : 'Start', isTimerStart : false, resetTimer: true })
+                 setAllValues({ step : allValues.step + 1,button :'Start', isTimerStart : false, resetTimer: true })
                  
             }
         } else {
@@ -41,7 +40,7 @@ function TutorialScreen({route, navigation}) {
     
 
         return (
-            <Screen>
+            
 
                 <View style={styles.container}>
 
@@ -95,7 +94,7 @@ function TutorialScreen({route, navigation}) {
 
                 </View>
 
-            </Screen>
+        
         );
   
 }
@@ -155,7 +154,7 @@ const styles = StyleSheet.create({
     },
     info:{
         width: "80%",
-        height: 200,       
+        height: 150,       
         marginVertical: 10,
     },
 })

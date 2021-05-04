@@ -17,6 +17,7 @@ function CardScreen({navigation}) {
                     title={item.title}
                     subtitle={item.subtitle}
                     image={item.image}
+                    
                     onPress={() => navigation.navigate("Presentation",item)}/>} />
 
         </Screen>

@@ -21,5 +21,10 @@ export default {
     step8 : require('../assets/statusEgg/step8.png'),
     step9 : require('../assets/statusEgg/step9.png'),
     step10 : require('../assets/statusEgg/step10.png'),
-    finish : require('../assets/finish.png'),
+    finish : require('../assets/statusEgg/finish.png'),
+    lingura_cu_gauri : require('../assets/ustensile/lingura_cu_gauri.png'),
+    oala_cu_apa: require('../assets/ustensile/oala_cu_apa.png'),
+    oala_cu_apa_fierband : require('../assets/ustensile/oala_cu_apa_fierband.png'),
+    robinet: require('../assets/ustensile/robinet.png'),
+    finishPicture: require('../assets/finishPicture.png'),
 }

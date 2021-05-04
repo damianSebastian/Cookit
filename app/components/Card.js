@@ -2,24 +2,44 @@ import React from 'react';
 import {View, StyleSheet, Image,Text, TouchableOpacity} from 'react-native';
 
 import defaultProps from '../config/defaultProps';
+import imageLoc from '../config/imagesLocation';
 
-function Card({title, subtitle, image, onPress}) {
+function Card({title, subtitle, image, onPress,showBadge}) {
+
+  let badge;
+  if (showBadge) {
+    badge= <Image 
+    source={imageLoc.finish}
+    resizeMode='contain'
+    style={styles.cookStatus}
+    /> 
+  } else {
+    badge= <Image 
+    source={imageLoc.step1}
+    resizeMode='contain'
+    style={styles.cookStatus}
+    />
+  }
+
     return (
-        <TouchableOpacity style={style.card} onPress={onPress}>
-            <Image source={image} style={style.image}/>
-            <View style={style.detailContainer}>
-                <Text style={defaultProps.mainText}>{title}</Text>
-                 <Text style={defaultProps.descriptionText}>{subtitle}</Text>
-            </View>
+        <TouchableOpacity style={styles.card} onPress={onPress}>
+            <Image source={image} style={styles.image}/>            
             
-
+            <View style={styles.detailContainer}>
+              <View>
+                <Text style={defaultProps.mainText}>{title}</Text>
+                <Text style={defaultProps.descriptionText}>{subtitle}</Text>               
+              </View>
+                {badge}
+            </View>
+          
         </TouchableOpacity>
     );
 }
 
 export default Card;
 
-const style=StyleSheet.create({
+const styles=StyleSheet.create({
     card :{
       backgroundColor : defaultProps.colors.firstBackground,
       borderRadius: 15,    
@@ -31,6 +51,15 @@ const style=StyleSheet.create({
         height: 200,
     },
     detailContainer:{
-      padding:10,
-    }
+      paddingTop:5,
+      paddingLeft: 15,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    cookStatus: {
+      height: 50,
+       width: 50,
+       margin: 5,
+     
+   },
   })

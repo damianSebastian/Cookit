@@ -2,18 +2,22 @@ import React from 'react';
 import {
     Image,
     View,
-    StyleSheet
+    StyleSheet,
+    Dimensions,
 } from 'react-native';
 
 import defaultProps from '../config/defaultProps';
 import imageLoc from '../config/imagesLocation';
 
+
+
 function WellcomeScreen({navigation}) {
   setTimeout(() => navigation.navigate("Cards"),2000);
 
   return( 
+    
     <View style={styles.background}>
-      <Image style={styles.logo} source={imageLoc.logo} ></Image>              
+      <Image style={styles.logo} source={imageLoc.logo} />             
     </View> 
   )
 }
@@ -22,14 +26,16 @@ export default WellcomeScreen;
     
 const styles = StyleSheet.create ({
   
-    background : {       
-      alignItems : 'center',     
+    background : {    
+         
+      alignItems : 'center',
+       justifyContent:'center',    
       backgroundColor: defaultProps.colors.firstBackground, 
+      flex: 1,
     },  
 
     logo : {    
-      width : 400,
-      height : 400,   
-      top: "50%",   
+      width : Dimensions.get('screen').width - 20,
+      height : Dimensions.get('screen').width - 20,        
     }
   })
