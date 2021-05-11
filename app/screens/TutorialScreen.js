@@ -63,9 +63,9 @@ function TutorialScreen({route, navigation}) {
                             resizeMode='contain'
                             style={styles.cookStatus}
                             />                      
-                        </View>
+                    </View>
 
-                        <View style={styles.info} >
+                    <View style={styles.info} >
 
                             <ScrollView contentContainerStyle={{alignItems:'center'}}>
 
@@ -73,13 +73,13 @@ function TutorialScreen({route, navigation}) {
                             text={item.steps[allValues.step].text}/> 
                             
                             </ScrollView>
-                        </View>
-                    
-                        <Image source={item.steps[allValues.step].image}
+                    </View>
+                        
+                    <Image source={item.steps[allValues.step].image}
                         resizeMode='contain'
                         style={styles.image}/>
 
-                        <View style={styles.buttons}>
+                    <View style={styles.buttons}>
 
                             <AppIconButtons iconName="arrow-left"
                             size={60}
@@ -87,8 +87,7 @@ function TutorialScreen({route, navigation}) {
 
                             <MyButton 
                             title={allValues.button}                            
-                            onPress={handleOnPressStart}
-                        /> 
+                            onPress={handleOnPressStart}/>                       
                         
                     </View>  
 
@@ -155,7 +154,7 @@ const styles = StyleSheet.create({
     info:{
         width: "80%",
         height: 150,       
-        marginVertical: 10,
+        marginVertical: 40,
     },
 })
 

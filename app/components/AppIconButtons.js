@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     container:{
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 5,
+        margin: 5,       
     },
     back:{
         backgroundColor: defaultProps.colors.button,

@@ -6,7 +6,6 @@ import defaultProps from '../config/defaultProps';
 import MyButton from '../components/MyButton';
 import AppText from '../components/AppText';
 import ListSeparator from '../components/ListSeparator';
-import imageLoc from '../config/imagesLocation';
 
 function PresentationProductScreen({route, navigation}) {
     const item = route.params;
@@ -30,7 +29,7 @@ function PresentationProductScreen({route, navigation}) {
                     <AppText text="Ustensile:" style={[defaultProps.titletext,{marginLeft: 20}]}/>
                     <AppText text = {item.ustensile} style={[defaultProps.mainText,{marginLeft: 10}]}/>
                     
-                    <View style={{flexDirection: 'row'}}>
+                    <View style={{flexDirection: 'row', flexWrap:'wrap'}}>
                             {item.imaginiUstensile.map((it) => 
                             <Image source={it.image} key={it.id} style={{height:70, width:70, margin: 10}} resizeMode="contain"/>)}
                     </View>
@@ -41,8 +40,6 @@ function PresentationProductScreen({route, navigation}) {
 
                     <ListSeparator/>
                 
-
-
                 <View style ={{ alignItems: 'center'}}>
                     <MyButton title="Start"
                         size={120}

@@ -27,4 +27,12 @@ export default {
     oala_cu_apa_fierband : require('../assets/ustensile/oala_cu_apa_fierband.png'),
     robinet: require('../assets/ustensile/robinet.png'),
     finishPicture: require('../assets/finishPicture.png'),
+    rosie_taiata: require('../assets/ustensile/R2_S4.png'),
+    sticla_ulei: require('../assets/ustensile/sticla_ulei.png'),
+    tava: require('../assets/ustensile/tava.png'),
+    ou_spart : require('../assets/ustensile/ou_spart.png'),
+    fund: require('../assets/ustensile/fund_de_tocat.png'),
+    lingura: require('../assets/ustensile/lingura.png'),
+    cutit: require('../assets/ustensile/cutit.png'),
+    R2: require('../assets/covers/R2.jpg'),
 }
