@@ -67,7 +67,10 @@ function TutorialScreen({route, navigation}) {
 
                     <View style={styles.info} >
 
-                            <ScrollView contentContainerStyle={{alignItems:'center'}}>
+                            <ScrollView showsVerticalScrollIndicator={false} 
+                            fadingEdgeLength={30}
+                            
+                            contentContainerStyle={{alignItems:'center'}}>
 
                             <AppText style={defaultProps.mainText}
                             text={item.steps[allValues.step].text}/> 
@@ -123,9 +126,9 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     image:{
-        width: 200,
-        height:200,      
-         margin:5,
+        width: 250,
+        height:250,      
+         marginTop: 10,
     },
     statusBar:{
         alignItems: 'center',      
