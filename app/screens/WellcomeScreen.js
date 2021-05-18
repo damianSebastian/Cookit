@@ -5,7 +5,6 @@ import {
     StyleSheet,
     Dimensions,
 } from 'react-native';
-import MyButton from '../components/MyButton';
 
 import defaultProps from '../config/defaultProps';
 import imageLoc from '../config/imagesLocation';
@@ -18,8 +17,7 @@ function WellcomeScreen({navigation}) {
   return( 
     
     <View style={styles.background}>
-      <Image style={styles.logo} source={imageLoc.logo} />  
-      <MyButton title='go cards' onPress={() => navigation.navigate("Autonav")}/>           
+      <Image style={styles.logo} source={imageLoc.logo} />             
     </View> 
   )
 }

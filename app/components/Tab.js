@@ -19,16 +19,19 @@ const TabNavigator = () => (
     }}>
         <Tab.Screen name="Cook" component ={CardScreen} 
         options={{title: "Cook your egg",
-        headerLeft: false,
-        headerTitleAlign: 'center',
-         headerStyle:{backgroundColor: defaultProps.colors.lightButton , height: 60},
+
          tabBarIcon:() => ( <MaterialCommunityIcons name="home" color={defaultProps.colors.firstBackground} size={35}/>)
             }}/>
         
-        <Tab.Screen name="Info" component={Info} options={{tabBarIcon:() => (
+        <Tab.Screen name="Info"
+         component={Info} 
+         options={{title:"Tips & Tricks",tabBarIcon:() => (
             <MaterialCommunityIcons name="information" color={defaultProps.colors.firstBackground} size={35}/>
         )}}/>
-        <Tab.Screen name ="Help" component={Help} options={{tabBarIcon:() => (
+
+        <Tab.Screen name ="Help"
+         component={Help}
+          options={{title:"Useful info",tabBarIcon:() => (
             <MaterialCommunityIcons name="help-box" color={defaultProps.colors.firstBackground} size={35}/>
         )}}/>
     </Tab.Navigator> 

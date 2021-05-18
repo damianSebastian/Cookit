@@ -54,18 +54,8 @@ function PresentationProductScreen({route, navigation}) {
 export default PresentationProductScreen;
 
 const style=StyleSheet.create({
-    container:{
-        flex:1,         
-    },
     image :{
         height:300,
         width:"100%",
     },
-    description:{
-        paddingLeft: 20,
-        height: 80,
-        width:"100%", 
-        backgroundColor: defaultProps.colors.firstBackground,      
-    },
-
 })
