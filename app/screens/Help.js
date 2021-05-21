@@ -1,18 +1,28 @@
 import React from 'react';
-import {Image, StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet, Dimensions, FlatList, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
-import imagesLocation from '../config/imagesLocation';
+import ustensile from '../config/imgUstensile';
+import HelpItem from '../components/HelpItem';
+import ListSeparator from '../components/ListSeparator';
 
 function Help() {
     
     return (
-        <ScrollView style={styles.container}>
-            <AppText text="Help" style={[defaultProps.titletext,{margin:10, fontSize: 35}]}/>
-            <Image style={styles.image} source={imagesLocation.logo} />
-        </ScrollView>         
+        
+            <FlatList
+                data={ustensile}
+                keyExtractor={(utensil) => utensil.id.toString()}
+                renderItem={({item}) =>
+                <HelpItem 
+                image={item.image}
+                description={item.description}/>} 
+                ItemSeparatorComponent={() => <ListSeparator/>}
+                />
+                
+       
       );
 }
 export default Help;

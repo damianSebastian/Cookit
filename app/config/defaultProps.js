@@ -1,9 +1,11 @@
 import {Platform} from 'react-native';
 
 import colors from './colors';
+import imageLoc from './imagesLocation';
 
 export default {
     colors,
+    imageLoc,
     mainText: {
         margin: 5,
         color: colors.text,

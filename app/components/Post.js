@@ -18,7 +18,7 @@ function Post({title,image,content}) {
             <View style={styles.info}>
                 <ScrollView>
                     <AppText text={content} style={defaultProps.descriptionText}/>
-
+                    
                 </ScrollView>
             </View>
         </View>
@@ -46,5 +46,4 @@ const styles = StyleSheet.create({
          maxHeight:150,
         minHeight:50,
     },
-
   })
