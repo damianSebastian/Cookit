@@ -77,10 +77,12 @@ function TutorialScreen({route, navigation}) {
                             
                             </ScrollView>
                     </View>
-                        
-                    <Image source={item.steps[allValues.step].image}
-                        resizeMode='contain'
-                        style={styles.image}/>
+                    
+                       <ScrollView  style={{height:250, width:250}}>
+                            {item.steps[allValues.step].image.map((it) => 
+                            <Image source={it.image} key={it.id} style={styles.image} resizeMode="contain"/>)}
+
+                           </ScrollView> 
 
                     <View style={styles.buttons}>
 

@@ -12,13 +12,11 @@ function Help() {
         <ScrollView style={styles.container}>
             <AppText text="Help" style={[defaultProps.titletext,{margin:10, fontSize: 35}]}/>
             <Image style={styles.image} source={imagesLocation.logo} />
-
-        </ScrollView>
-  
-          
+        </ScrollView>         
       );
 }
 export default Help;
+
 const styles=StyleSheet.create({
     container : {
     backgroundColor:defaultProps.colors.firstBackground,
@@ -30,7 +28,5 @@ const styles=StyleSheet.create({
         Dimensions.get("screen").width >= 500 ? 500: Dimensions.get("screen").width ,
         height:Dimensions.get("screen").width >= 500 ? 500: Dimensions.get("screen").width ,
         alignSelf:'center',
-       
-
     },
 })

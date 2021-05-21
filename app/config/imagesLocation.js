@@ -34,7 +34,9 @@ export default {
     fund: require('../assets/ustensile/fund_de_tocat.png'),
     lingura: require('../assets/ustensile/lingura.png'),
     cutit: require('../assets/ustensile/cutit.png'),
+    R1: require('../assets/covers/R1.jpg'),
     R2: require('../assets/covers/R2.jpg'),
     R3: require('../assets/covers/R3.jpg'),
     paleta: require('../assets/ustensile/paleta.png'),
+    oua_fierte: require('../assets/covers/boil_eggs.jpg'),
 }
