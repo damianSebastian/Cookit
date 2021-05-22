@@ -35,68 +35,64 @@ function TutorialScreen({route, navigation}) {
         }
     }
 
-    const handlePreviousOnPress = allValues.step === 0 ? null : () => 
-    setAllValues({...allValues, step : allValues.step - 1 ,isTimerStart: false, resetTimer : true});
+    const handlePreviousOnPress = allValues.step === 0 ? null : () => setAllValues({...allValues, step : allValues.step - 1 ,isTimerStart: false, resetTimer : true});
     
+       return (
+    
+        <View style={styles.container}>
 
-        return (
-            
+            <View style={styles.statusBar}>
 
-                <View style={styles.container}>
-
-                    <View style={styles.statusBar}>
-
-                        <View >
-                            
-                            <Timer
-                            totalDuration={item.steps[allValues.step].time}
-                            start={allValues.isTimerStart}                           
-                            reset={allValues.resetTimer}                           
-                            options={options}                   
-                            handleFinish={handleOnPressStart}                      
-                            />                  
-
-                        </View>
-
-                            <Image 
-                            source={item.steps[allValues.step].statusImage}
-                            resizeMode='contain'
-                            style={styles.cookStatus}
-                            />                      
-                    </View>
-
-                    <View style={styles.info} >
-
-                            <ScrollView showsVerticalScrollIndicator={false} 
-                            fadingEdgeLength={30}
-                            
-                            contentContainerStyle={{alignItems:'center'}}>
-
-                            <AppText style={defaultProps.mainText}
-                            text={item.steps[allValues.step].text}/> 
-                            
-                            </ScrollView>
-                    </View>
+                <View >
                     
-                       <ScrollView  style={{height:250, width:250}}>
-                            {item.steps[allValues.step].image.map((it) => 
-                            <Image source={it.image} key={it.id} style={styles.image} resizeMode="contain"/>)}
-
-                           </ScrollView> 
-
-                    <View style={styles.buttons}>
-
-                            <AppIconButtons iconName="arrow-left"
-                            size={60}
-                            onPress={handlePreviousOnPress}/> 
-
-                            <MyButton 
-                            title={allValues.button}                            
-                            onPress={handleOnPressStart}/>                       
-                        
-                    </View>  
+                    <Timer
+                    totalDuration={item.steps[allValues.step].time}
+                    start={allValues.isTimerStart}                           
+                    reset={allValues.resetTimer}                           
+                    options={options}                   
+                    handleFinish={handleOnPressStart}                      
+                    />                  
 
                 </View>
+                    <Image 
+                    source={item.steps[allValues.step].statusImage}
+                    resizeMode='contain'
+                    style={styles.cookStatus}
+                    />                      
+            </View>
+
+            <View style={styles.info} >
+
+                    <ScrollView showsVerticalScrollIndicator={false} 
+                    fadingEdgeLength={30}
+                    
+                    contentContainerStyle={{alignItems:'center'}}>
+
+                    <AppText style={defaultProps.mainText}
+                    text={item.steps[allValues.step].text}/> 
+                    
+                    </ScrollView>
+            </View>
+            
+                <ScrollView  style={{height:250, width:250}}>
+                    {item.steps[allValues.step].image.map((it) => 
+                    <Image source={it.image} key={it.id} style={styles.image} resizeMode="contain"/>)}
+
+                    </ScrollView> 
+
+            <View style={styles.buttons}>
+
+                    <AppIconButtons iconName="arrow-left"
+                    size={60}
+                    onPress={handlePreviousOnPress}/> 
+
+                    <MyButton 
+                    title={allValues.button}                            
+                    onPress={handleOnPressStart}/>                       
+                
+            </View>  
+
+        </View>
 
         
         );

@@ -38,7 +38,4 @@ export default {
     R2: require('../assets/covers/R2.jpg'),
     R3: require('../assets/covers/R3.jpg'),
     paleta: require('../assets/ustensile/paleta.png'),
-    oua_fierte: require('../assets/covers/boil_eggs.jpg'),
-    proteine_cover: require('../assets/covers/proteins.jpg'),
-    creier_cover: require('../assets/covers/creier.jpg'),
 }

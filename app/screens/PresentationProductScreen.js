@@ -13,12 +13,9 @@ function PresentationProductScreen({route, navigation}) {
         <ScrollView>
             
                 <Image style={style.image} resizeMode='cover' source={item.image}/>
-
-                
+              
                     <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={item.title}/>
                     <AppText style={[defaultProps.mainText, {marginLeft: 10}]} text={item.subtitle}/>
-                
-
                 
                     <ListSeparator/>
                     <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={"Ingredients"}/>

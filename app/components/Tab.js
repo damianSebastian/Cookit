@@ -22,12 +22,6 @@ const TabNavigator = () => (
          tabBarIcon:() => ( <MaterialCommunityIcons name="home" color={defaultProps.colors.firstBackground} size={35}/>)
             }}/>
 
-    <Tab.Screen name="Info" component ={CardScreen} 
-        options={{title: "Cook your egg",
-
-         tabBarIcon:() => ( <MaterialCommunityIcons name="info" color={defaultProps.colors.firstBackground} size={35}/>)
-            }}/>
-
         <Tab.Screen name ="Help"
          component={Help}
           options={{title:"Useful info",tabBarIcon:() => (
