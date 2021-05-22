@@ -1,28 +1,22 @@
 import React from 'react';
-import {StyleSheet, Dimensions, FlatList, View } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {StyleSheet, Dimensions, FlatList} from 'react-native';
 
-import AppText from '../components/AppText';
 import defaultProps from '../config/defaultProps';
-import ustensile from '../config/imgUstensile';
 import HelpItem from '../components/HelpItem';
 import ListSeparator from '../components/ListSeparator';
 
-function Help() {
-    
-    return (
-        
-            <FlatList
-                data={ustensile}
-                keyExtractor={(utensil) => utensil.id.toString()}
-                renderItem={({item}) =>
-                <HelpItem 
-                image={item.image}
-                description={item.description}/>} 
-                ItemSeparatorComponent={() => <ListSeparator/>}
-                />
-                
-       
+function Help() {   
+    return (   
+        <FlatList
+            data={defaultProps.imgUstensile}
+            keyExtractor={(utensil) => utensil.id.toString()}
+            renderItem={({item}) =>
+            <HelpItem 
+            image={item.image}
+            description={item.description}/>} 
+            ItemSeparatorComponent={() => <ListSeparator/>}
+            />
+            
       );
 }
 export default Help;

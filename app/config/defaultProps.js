@@ -2,10 +2,12 @@ import {Platform} from 'react-native';
 
 import colors from './colors';
 import imageLoc from './imagesLocation';
+import imgUstensile from './imgUstensile';
 
 export default {
     colors,
     imageLoc,
+    imgUstensile,
     mainText: {
         margin: 5,
         color: colors.text,
