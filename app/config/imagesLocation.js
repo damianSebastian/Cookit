@@ -38,4 +38,5 @@ export default {
     R2: require('../assets/covers/R2.jpg'),
     R3: require('../assets/covers/R3.jpg'),
     paleta: require('../assets/ustensile/paleta.png'),
+    R5 : require ('../assets/covers/R5.jpg'),
 }

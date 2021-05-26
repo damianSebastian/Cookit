@@ -2,12 +2,17 @@ import imageLoc from './imagesLocation';
 
 export default [
     {
+        id:2,
+        image: imageLoc.waiting_egg,
+        description: "- Press Done after you do the instructions"
+    },
+    {
         id:1,
         image: imageLoc.bol,
         description: "- Bowl",
     },
     {
-        id:2,
+        id:16,
         image: imageLoc.cuptor_microunde,
         description: "- Oven",
     },

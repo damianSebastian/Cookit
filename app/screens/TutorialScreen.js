@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import { View, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Image, Alert  } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import {Timer} from 'react-native-stopwatch-timer';
 
@@ -12,30 +12,45 @@ function TutorialScreen({route, navigation}) {
     const item = route.params;
     const [allValues, setAllValues] = useState({
         step: 0,
-        button: 'Start',
+        button: 'Done',
         isTimerStart: false,
         resetTimer: false,
     });
+    const alertButton = () => Alert.alert (
+        "Be carefull!",
+        "Do you want to leave the cook?",
+        [
+            {
+                text: "Yes",
+                onPress : () => navigation.navigate("Presentation"),
+            },
+            {
+                text :"No, sorry",
+                
+            },
+
+        ]
+    );
 
         
     const handleOnPressStart =() => {
         
-        if(allValues.button === 'Finish') {
+        if(allValues.button === 'Wait') {
             if(allValues.step === item.steps.length - 1 ) { 
                 
                 navigation.navigate("Finish");
 
             } else {
-                 setAllValues({ step : allValues.step + 1,button :'Start', isTimerStart : false, resetTimer: true })
+                 setAllValues({ step : allValues.step + 1,button :'Done', isTimerStart : false, resetTimer: true })
                  
             }
         } else {
-            setAllValues({...allValues,button : 'Finish', isTimerStart: !allValues.isTimerStart, resetTimer : false})
+            setAllValues({...allValues,button : 'Wait', isTimerStart: !allValues.isTimerStart, resetTimer : false})
             
         }
     }
 
-    const handlePreviousOnPress = allValues.step === 0 ? null : () => setAllValues({...allValues, step : allValues.step - 1 ,isTimerStart: false, resetTimer : true});
+    const handlePreviousOnPress = allValues.step === 0 ? () => alertButton() : () => setAllValues({...allValues, step : allValues.step - 1 ,isTimerStart: false, resetTimer : true});
     
        return (
     
@@ -63,7 +78,7 @@ function TutorialScreen({route, navigation}) {
 
             <View style={styles.info} >
 
-                    <ScrollView showsVerticalScrollIndicator={false} 
+                    <ScrollView 
                     fadingEdgeLength={30}
                     
                     contentContainerStyle={{alignItems:'center'}}>
@@ -74,7 +89,9 @@ function TutorialScreen({route, navigation}) {
                     </ScrollView>
             </View>
             
-                <ScrollView  style={{height:250, width:250}}>
+                <ScrollView  
+                showsVerticalScrollIndicator={true}
+                style={{height:250, width:250}}>
                     {item.steps[allValues.step].image.map((it) => 
                     <Image source={it.image} key={it.id} style={styles.image} resizeMode="contain"/>)}
 
@@ -121,7 +138,7 @@ const styles = StyleSheet.create({
         flex:1,          
     },
     text:{
-        margin: 10,
+        margin: 5,
     },
     image:{
         width: 250,

@@ -20,7 +20,6 @@ const AutoNav = () => (
         <Stack.Screen name="Presentation" component ={PresentationProductScreen}
         options={{title: "Cook your egg",
         headerTitleAlign: 'center',
-        headerLeft: false,
          headerStyle:{backgroundColor: defaultProps.colors.lightButton, height: 60}}} />   
 
          <Stack.Screen name="Tutorial" component ={TutorialScreen}

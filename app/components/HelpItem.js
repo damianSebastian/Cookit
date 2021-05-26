@@ -17,12 +17,15 @@ export default HelpItem;
 
 const styles = StyleSheet.create({
         container:{
-            width: "100%",
+           
             height:100,
             flexDirection:'row',
             backgroundColor:  defaultProps.colors.firstBackground,
             alignItems:'center',
-            paddingHorizontal:10,
+            paddingHorizontal: 5,
+            margin: 13 ,
+            borderRadius:10,
+            // overflow: 'hidden',
         },
 
         image :{

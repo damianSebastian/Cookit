@@ -356,7 +356,7 @@ export default [
                 time: 0,
             },
             {
-                text:"Mix until smooth",
+                text:"Press Done\nMix until smooth",
                 image:[{
                     id:1,
                     image: imageLoc.tel,
@@ -583,10 +583,10 @@ export default [
     {
         id: 5,
         title: "EGG CANDY",
-        subtitle: "4 ingredients, 4 utensils, 6 minutes, 2 slice",
-        image: imageLoc.R3,
-        ingredients: "-4 chicken eggs\n-green onion\n-seeds(what you like)\n-salt\n-tomato sauce/ketchup\n-oil\n-optional:yogurt",
-        ustensile: "-pan\n-1 bowl\n-2 wooden sticks at least of 15cm long",
+        subtitle: "4 ingredients, 4 utensils, 6 minutes, 1 slice",
+        image: imageLoc.R5,
+        ingredients: "-2 chicken eggs\n-green onion\n-seeds(what you like)\n-salt\n-tomato sauce/ketchup\n-oil\n-optional:yogurt",
+        ustensile: "-pan\n-1 bowl\n-1 wooden sticks at least of 15cm long",
         totalTime:"6 minutes",
         imaginiUstensile:[
             {
@@ -615,29 +615,14 @@ export default [
                 time: 0,
             },
             {
-                text:"Separate the glair from the yolk.\nWe need just the yolks so put them in a bowl",
-                image: [
-                    {
-                        id:1,
-                        image: imageLoc.bol,
-                    },
-                    {
-                        id:2,
-                        image:imageLoc.ou_spart,
-                    }
-                ],
-                statusImage : imageLoc.step2,
-                time: 60000,
-            },
-            {
-                text:"Grease the pan with oil",
+                text:"Grease the pan with oil.",
                 image:[
                     {
                         id:1,
                         image:imageLoc.sticla_ulei,
                     }
                 ],
-                statusImage : imageLoc.step3,
+                statusImage : imageLoc.step2,
                 time: 0,
             },
             {
@@ -648,24 +633,21 @@ export default [
                         image:imageLoc.tigaie_pe_foc,
                     }
                 ],
-                statusImage : imageLoc.step4,
+                statusImage : imageLoc.step3,
                 time: 60000,
             },
             {
-                text:"Put the sticks in pan. Put 2 yolk on every stick, side by side.\nUse a spoon to take the yolks from bowl.\nPress Start and wait",
+                text:"Separate the glair from the yolk.\nWe need just the yolks. Put the yolks in lid, on the sick.",
                 image: [
                     {
                         id:1,
-                        image:imageLoc.lingura,
-                    },
-                    {
-                        id:2,
-                        image:imageLoc.lingura, //imaginea de pe insta
+                        image:imageLoc.ou_spart,
                     }
                 ],
-                statusImage : imageLoc.step5,
-                time: 60000,
+                statusImage : imageLoc.step4,
+                time: 180000,
             },
+
             {
                 text:"Now turn the yolks in the same time with the sticks.\nMake sure the stick is caught in the egg",
                 image:[
@@ -678,7 +660,7 @@ export default [
                 time: 0,
             },
             {
-                text:"Press Start\nWhile waiting, grease the yolks with ketchup and put the green onion and the seeds on the yolks",
+                text:"Press Done\nWhile waiting, grease the yolks with ketchup and put the green onion and the seeds on the yolks",
                 image:[
                     {
                         id:1,

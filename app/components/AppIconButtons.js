@@ -4,7 +4,7 @@ import {TouchableWithoutFeedback, View, StyleSheet} from 'react-native';
 import defaultProps from '../config/defaultProps';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-function AppIconButtons({iconName, onPress, size=30}) {
+function AppIconButtons({iconName, onPress, size=40}) {
     return (
         <TouchableWithoutFeedback 
           onPress={onPress}>
@@ -23,11 +23,12 @@ const styles = StyleSheet.create({
     container:{
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 5,       
+        margin: 5,
+              
     },
     back:{
         backgroundColor: defaultProps.colors.button,
-        borderRadius:30,
+        borderRadius: 15,      
     }
 })
 
