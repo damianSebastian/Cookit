@@ -13,24 +13,6 @@ export default [
                 text: "2 eggs from the fridge"
             },
         ],       
-        ustensile: [
-            {
-                id:1,
-                text:"pot with lid",
-            },
-            {
-                id:2,
-                text:"the egg must touch the bottom",
-            },
-            {
-                id:3,
-                text:"if you want to cook more eggs, make sure the pot is big enough",
-            },
-            {
-                id:4,
-                text: "spoon with holes",
-            }
-        ],
         imaginiUstensile: [
             {
                 id:1,
@@ -176,28 +158,6 @@ export default [
                 text:"paper",
             },
         ],
-        ustensile:[
-            {
-                id:1,
-                text: "knife",
-            },
-            {
-                id:2,
-                text: "oven tray",
-            },
-            {
-                id:3,
-                text: "oven",
-            },
-            {
-                id:4,
-                text: "chipper",
-            },
-            {
-                id:5,
-                text: "spoon",
-            },
-        ], 
         imaginiUstensile:[
             {
                 id:1,
@@ -381,28 +341,6 @@ export default [
             },
 
         ],
-        ustensile:[
-            {
-                id:1,
-                text:"spoon",
-            },
-            {
-                id:2,
-                text:"pallet",
-            },
-            {
-                id:3,
-                text:"pan and lid",
-            },
-            {
-                id:4,
-                text:"bowl",
-            },
-            {
-                id:5,
-                text:"whisk",
-            },
-        ],
         imaginiUstensile:[
             {
                 id:1,
@@ -571,28 +509,6 @@ export default [
             {
                 id:5,
                 text: "sweet sauce: honey is the best",
-            },
-        ],
-        ustensile:[
-            {
-                id:1,
-                text:"pan and lid",
-            },
-            {
-                id:2,
-                text:"2 bowls",
-            },
-            {
-                id:1,
-                text:"whisk",
-            },
-            {
-                id:1,
-                text:"pallet",
-            },
-            {
-                id:1,
-                text:"mixer",
             },
         ],
         imaginiUstensile:[
@@ -788,20 +704,6 @@ export default [
             },
 
         ],
-        ustensile:[
-            {
-                id:1,
-                text: "pan",
-            },
-            {
-                id:2,
-                text: "1 bowl",
-            },
-            {
-                id:3,
-                text: "1 wooden sticks at least of 15cm long",
-            },
-        ],
         totalTime:"6 minutes",
         imaginiUstensile:[
             {
@@ -923,24 +825,6 @@ export default [
             {
                 id:5,
                 text: "baking powder",
-            },
-        ],
-        ustensile:[
-            {
-                id: 1,
-                text: "bowl",
-            },
-            {
-                id: 2,
-                text: "mixer",
-            },
-            {
-                id: 3,
-                text: "whisk",
-            },
-            {
-                id: 4,
-                text: "pallet",
             },
         ],
         imaginiUstensile:[
@@ -1091,7 +975,7 @@ export default [
     {
         id: 7,
         title: "EGG CLOUD",
-        subtitle: "More than 3 ingredients,5 utensils, 25 minutes, 1 slice",
+        subtitle: "More than 3 ingredients,6 utensils, 25 minutes, 1 slice",
         image: imageLoc.R7,
         ingredients: [
             {
@@ -1130,33 +1014,6 @@ export default [
                 id:9,
                 text:"Spices: oregano, garlic powder, sweet / spicy paprika, hot pepper flakes",
             },
-        ],
-        ustensile: [
-            {
-                id:1,
-                text:"oven",
-            },
-            {
-                id:2,
-                text:"oven tray",
-            },
-            {
-                id:3,
-                text:"2 bowls",
-            },
-            {
-                id:4,
-                text:"mixer",
-            },
-            {
-                id:5,
-                text:"pallet",
-            },
-            {
-                id:6,
-                text:"spoon",
-            },
-
         ],
         imaginiUstensile:[
             {
@@ -1308,75 +1165,194 @@ export default [
     } ,
     {
         id: 8,
-        title: "title cook eight",
-        subtitle: "subtitle cook eight",
+        title: "SALAD WITH EGGS AND DILL",
+        subtitle: "5 ingredients, 5 utensils, 30 minutes, 3-4 slices",
         image: imageLoc.R8,
-        ingredients: "text aliniat frumos cu ingredeinte",
-        ustensile: "text aliniat frumos cu ustensile",
-        totalTime:"Total time: 30'",
+        ingredients:[
+            {
+                id:1,
+                text:"8 eggs",
+            },
+            {
+                id:2,
+                text:"oil",
+            },
+            {
+                id:3,
+                text:"salt",
+            },
+            {
+                id:4,
+                text:"some lettuce leaves",
+            },
+            {
+                id:5,
+                text:"pickled cucumber",
+            },
+            {
+                id:6,
+                text:"mustard",
+            },
+            {
+                id:7,
+                text:"sour creme",
+            },
+            {
+                id:8,
+                text:"dill",
+            },
+        ],
+        imaginiUstensile:[
+            {
+                id:1,
+                image: imageLoc.cutit,
+            },
+            {
+                id:2,
+                image:imageLoc.fund,
+             },
+             {
+                id:3,
+                image:imageLoc.oala_pe_foc,
+             },
+             {
+                id:4,
+                image:imageLoc.lingura,
+             },
+             {
+                id:5,
+                image:imageLoc.lingura_cu_gauri,
+             },
+        ],
+        totalTime:"Total time: 30",
         steps: [
             {
                 
-                text:" se aprinde aragazul1",
-                image: imageLoc.R2,
+                text:"Prepare the utensils!",
+                image:[
+                    {
+                        id:1,
+                        image: imageLoc.cutit,
+                    },
+                    {
+                        id:2,
+                        image:imageLoc.fund,
+                     },
+                     {
+                        id:3,
+                        image:imageLoc.oala_pe_foc,
+                     },
+                     {
+                        id:4,
+                        image:imageLoc.lingura,
+                     },
+                     {
+                        id:5,
+                        image:imageLoc.lingura_cu_gauri,
+                     },
+                ],
                 statusImage : imageLoc.step1,
-                time: 10000,
+                time: 0,
 
             },
             {
-                text:" se stinge aragazul2",
-                image: imageLoc.R2,
+                text:"Put water in a pot. We need to boil the eggs so put enough.\nLight the fire and let the water boil(without eggs)",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.oala_pe_foc,
+                    },
+                ],
                 statusImage : imageLoc.step2,
-                time: 10000,
+                time: 120000,
             },
             {
-                text:" se aprinde aragazul3",
-                image: imageLoc.R2,
+                text:"Put 7 eggs in the pot and put the lid on. Let them boil",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.oala_cu_apa_fierband,
+                    }
+                ],
                 statusImage : imageLoc.step3,
-                time: 10000,
+                time: 900000,
             },
             {
-                text:" se aprinde aragazul4",
-                image: imageLoc.R2,
+                text:"Get them out. Cool and peel the eggs.",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.lingura_cu_gauri,
+                    }
+                ],
                 statusImage : imageLoc.step4,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul5",
-                image: imageLoc.R2,
+                text:"Cut everything into cubes.\nSave just 1 yolk",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.cutit,
+                    },
+                    {
+                        id:1,
+                        image: imageLoc.fund,
+                    },
+                ],
                 statusImage : imageLoc.step5,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul6",
-                image: imageLoc.R2,
+                text:"Take the boiled yolk. Mix it very good with one raw yolk.",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.lingura,
+                    }
+                ],
                 statusImage : imageLoc.step6,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul7",
-                image: imageLoc.R2,
+                text:"Now add some mustard and oil and make mayonnaise",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.lingura,
+                    }
+                ],
                 statusImage : imageLoc.step7,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul8",
-                image: imageLoc.R2,
+                text:"Mix with some sour creme now, using a spoon",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.lingura,
+                    }
+                ],
                 statusImage : imageLoc.step8,
-                time: 10000,
+                time:0,
             },
             
             {
-                text:" se aprinde aragazul9",
-                image: imageLoc.R2,
+                text:"Cut the pickled cucumber into little cubes and mix with the boild eggs and the mayonnaise.\nPut some salt",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.bol,
+                    }
+                ],
                 statusImage : imageLoc.step9,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul10",
-                image: imageLoc.R2,
+                text:"Take a slice of bread, put a lettuce leave, after the composition and after some dill.",
+                image:null,
                 statusImage : imageLoc.step10,
-                time: 10000,
+                time: 0,
             },
         ]
     } ,

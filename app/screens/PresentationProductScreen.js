@@ -27,8 +27,6 @@ function PresentationProductScreen({route, navigation}) {
                     <ListSeparator />
 
                     <AppText text="Ustensile:" style={[defaultProps.titletext,{marginLeft: 20}]}/>
-                    {item.ustensile.map((it) => 
-                    <ListItem iconName="check-bold" text={it.text} key={it.id}/>)}
                     
                     <View style={{flexDirection: 'row', flexWrap:'wrap'}}>
                             {item.imaginiUstensile.map((it) => 
