@@ -1,15 +1,36 @@
 
 import imageLoc from './imagesLocation'; 
 
-export default [
-    
+export default [  
     {
         id: 1,
         title: "EGG PERFECTLY BOILED",
         subtitle: "1 ingredient, 2 utensils, 10 minutes, 1 slice",
         image: imageLoc.R1,
-        ingredients: "-2 eggs from the fridge",       
-        ustensile: "-pot with lid : the egg must touch the bottom. If you want to cook more eggs, make sure the pot is big enough.\n-spoon with holes",
+        ingredients:[
+            {
+                id:1,
+                text: "2 eggs from the fridge"
+            },
+        ],       
+        ustensile: [
+            {
+                id:1,
+                text:"pot with lid",
+            },
+            {
+                id:2,
+                text:"the egg must touch the bottom",
+            },
+            {
+                id:3,
+                text:"if you want to cook more eggs, make sure the pot is big enough",
+            },
+            {
+                id:4,
+                text: "spoon with holes",
+            }
+        ],
         imaginiUstensile: [
             {
                 id:1,
@@ -117,8 +138,66 @@ export default [
         title: "EGGS WITH TOMATOES",
         subtitle: "6 ingredients, 5 utensils, 35 minutes, 1 slice,",
         image: imageLoc.R2,
-        ingredients: "-2 chiken eggs\n-2 tomatoes\n-50g mozzarella\n-green onion(how much you like)\n-cheese\n-olive oil\n-mayonnaise\n-salt\n-paper",
-        ustensile: "-knife\n-oven tray\n-oven\n-chipper\n-spoon",
+        ingredients:[
+            {
+                id:1,
+                text:"2 chiken eggs",
+            },
+            {
+                id:2,
+                text:"2 tomatoes",
+            },
+            {
+                id:3,
+                text:"50g mozzarella",
+            },
+            {
+                id:4,
+                text:"green onion(how much you like)",
+            },
+            {
+                id:5,
+                text:"cheese",
+            },
+            {
+                id:6,
+                text:"olive oil",
+            },
+            {
+                id:7,
+                text:"mayonnaise",
+            },
+            {
+                id:8,
+                text:"salt",
+            },
+            {
+                id:9,
+                text:"paper",
+            },
+        ],
+        ustensile:[
+            {
+                id:1,
+                text: "knife",
+            },
+            {
+                id:2,
+                text: "oven tray",
+            },
+            {
+                id:3,
+                text: "oven",
+            },
+            {
+                id:4,
+                text: "chipper",
+            },
+            {
+                id:5,
+                text: "spoon",
+            },
+        ], 
         imaginiUstensile:[
             {
                 id:1,
@@ -267,8 +346,63 @@ export default [
         title: "EGGS WITH OAT",
         subtitle: "8 ingredients, 6 utensils, 10 minutes, 2 slice",
         image: imageLoc.R3,
-        ingredients: "-85g oat\n-200ml of milk\n-2 eggs\n-1 spoon of cheese\n-caraway\n-black pepper\n-salt\n-oil",
-        ustensile: "-spoon\n-pan and lid\n-bowl\n-whisk\n-pallet",
+        ingredients:[
+            {
+                id:1,
+                text:"85g oat",
+            },
+            {
+                id:2,
+                text:"200ml of milk",
+            },
+            {
+                id:3,
+                text:"2 eggs",
+            },
+            {
+                id:4,
+                text:"1 spoon of cheese",
+            },
+            {
+                id:5,
+                text:"caraway",
+            },
+            {
+                id:6,
+                text:"black pepper",
+            },
+            {
+                id:7,
+                text:"salt",
+            },
+            {
+                id:8,
+                text:"oil",
+            },
+
+        ],
+        ustensile:[
+            {
+                id:1,
+                text:"spoon",
+            },
+            {
+                id:2,
+                text:"pallet",
+            },
+            {
+                id:3,
+                text:"pan and lid",
+            },
+            {
+                id:4,
+                text:"bowl",
+            },
+            {
+                id:5,
+                text:"whisk",
+            },
+        ],
         imaginiUstensile:[
             {
                 id:1,
@@ -417,8 +551,50 @@ export default [
         title: "EGG CAKE",
         subtitle: "4 ingredients, 4 utensils, 12 minutes, 3 slice",
         image: imageLoc.R3,
-        ingredients: "-5 chicken eggs\n-butter/oil\n-salt\n-sugar\n-sweet sauce: honey is the best",
-        ustensile: "-pan and lid\n-2 bowls\n-whisk\n-pallet\n-mixer",
+        ingredients:[
+            {
+                id:1,
+                text: "5 chicken eggs",
+            },
+            {
+                id:2,
+                text: "butter/oil",
+            },
+            {
+                id:3,
+                text: "salt",
+            },
+            {
+                id:4,
+                text: "sugar",
+            },
+            {
+                id:5,
+                text: "sweet sauce: honey is the best",
+            },
+        ],
+        ustensile:[
+            {
+                id:1,
+                text:"pan and lid",
+            },
+            {
+                id:2,
+                text:"2 bowls",
+            },
+            {
+                id:1,
+                text:"whisk",
+            },
+            {
+                id:1,
+                text:"pallet",
+            },
+            {
+                id:1,
+                text:"mixer",
+            },
+        ],
         imaginiUstensile:[
             {
                 id:1,
@@ -585,8 +761,47 @@ export default [
         title: "EGG CANDY",
         subtitle: "4 ingredients, 4 utensils, 6 minutes, 1 slice",
         image: imageLoc.R5,
-        ingredients: "-2 chicken eggs\n-green onion\n-seeds(what you like)\n-salt\n-tomato sauce/ketchup\n-oil\n-optional:yogurt",
-        ustensile: "-pan\n-1 bowl\n-1 wooden sticks at least of 15cm long",
+        ingredients:[
+            {
+                id:1,
+                text: "2 chicken eggs",
+            },
+            {
+                id:2,
+                text: "green onion",
+            },
+            {
+                id:3,
+                text: "paper",
+            },
+            {
+                id:4,
+                text: "salt",
+            },
+            {
+                id:5,
+                text: "tomato sauce/ketchup",
+            },
+            {
+                id:6,
+                text: "oil",
+            },
+
+        ],
+        ustensile:[
+            {
+                id:1,
+                text: "pan",
+            },
+            {
+                id:2,
+                text: "1 bowl",
+            },
+            {
+                id:3,
+                text: "1 wooden sticks at least of 15cm long",
+            },
+        ],
         totalTime:"6 minutes",
         imaginiUstensile:[
             {
@@ -685,149 +900,409 @@ export default [
     } ,
     {
         id: 6,
-        title: "title cook one",
-        subtitle: "subtitle cook one",
-        image: imageLoc.R2,
-        ingredients: "text aliniat frumos cu ingredeinte",
-        ustensile: "text aliniat frumos cu ustensile",
-        totalTime:"Timp total pentru a gati",
+        title: "OMELETTE SOUFFLE",
+        subtitle: "5  ingredients, 4 utensils, 20 minutes, 1 slice",
+        image: imageLoc.R6,
+        ingredients:[
+            {
+                id:1,
+                text: "3 eggs",
+            },
+            {
+                id:2,
+                text: "salt",
+            },
+            {
+                id:3,
+                text: "oil",
+            },
+            {
+                id:4,
+                text: "parsley",
+            },
+            {
+                id:5,
+                text: "baking powder",
+            },
+        ],
+        ustensile:[
+            {
+                id: 1,
+                text: "bowl",
+            },
+            {
+                id: 2,
+                text: "mixer",
+            },
+            {
+                id: 3,
+                text: "whisk",
+            },
+            {
+                id: 4,
+                text: "pallet",
+            },
+        ],
+        imaginiUstensile:[
+            {
+                id:1,
+                image: imageLoc.mixer,
+            },
+            {
+                id:2,
+                image:imageLoc.bol,
+             },
+             {
+                id:3,
+                image:imageLoc.paleta,
+             },
+             {
+                id:4,
+                image:imageLoc.tel,
+             },
+        ],
+        totalTime:"Total time: 20 minutes",
         steps: [
-            {
-                
-                text:" se aprinde aragazul1",
-                image: imageLoc.R2,
+            {              
+                text:"Prepare the utensils",
+                image:[
+                    {
+                        id:1,
+                        image: imageLoc.mixer,
+                    },
+                    {
+                        id:2,
+                        image:imageLoc.bol,
+                     },
+                     {
+                        id:3,
+                        image:imageLoc.paleta,
+                     },
+                     {
+                        id:4,
+                        image:imageLoc.tel,
+                     },
+                ],
                 statusImage : imageLoc.step1,
-                time: 10000,
-
+                time: 0,
             },
             {
-                text:" se stinge aragazul2",
-                image: imageLoc.R2,
+                text:"Separate the glair from the yolk. Put them in 2 different bowls",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.ou_spart,
+                    },
+                ],
                 statusImage : imageLoc.step2,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul3",
-                image: imageLoc.R2,
+                text:"Put how much salt you like on glairs",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.bol,
+                    },
+                ],
                 statusImage : imageLoc.step3,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul4",
-                image: imageLoc.R2,
+                text:"Mix the glairs until smooth!",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.mixer,
+                    },
+                ],
                 statusImage : imageLoc.step4,
-                time: 10000,
+                time: 90000,
             },
             {
-                text:" se aprinde aragazul5",
-                image: imageLoc.R2,
+                text:"Add a knife tip of baking powder and some parsley on the yolks.",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.cutit,
+                    },
+                ],
                 statusImage : imageLoc.step5,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul6",
-                image: imageLoc.R2,
+                text:"Mix the yolks",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.tel,
+                    },
+                ],
                 statusImage : imageLoc.step6,
-                time: 10000,
+                time: 60000,
             },
             {
-                text:" se aprinde aragazul7",
-                image: imageLoc.R2,
+                text:"Mix the glairs with the yolks carefully.\nBe careful to mix from the bottom up because we don't want to lose tha air from the glairs",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.paleta,
+                    },
+                ],
                 statusImage : imageLoc.step7,
-                time: 10000,
+                time: 60000,
             },
             {
-                text:" se aprinde aragazul8",
-                image: imageLoc.R2,
+                text:"Put some oil in the lid and let it heat up",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.tigaie_pe_foc,
+                    },
+                ],
                 statusImage : imageLoc.step8,
-                time: 10000,
+                time: 60000,
             },
             
             {
-                text:" se aprinde aragazul9",
-                image: imageLoc.R2,
+                text:"Put the composition in the pan. Put the lid on\nLet it cook at medium heat",
+                image: [
+                    {
+                        id:1,
+                        image:imageLoc.tigaie_pe_foc_inchisa,
+                    },
+                ],
                 statusImage : imageLoc.step9,
-                time: 10000,
+                time: 600000,
             },
             {
-                text:" se aprinde aragazul10",
-                image: imageLoc.R2,
+                text:"Stop the fire and take it out!",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.tigaie_pe_foc,
+                    },
+                ],
                 statusImage : imageLoc.step10,
-                time: 10000,
+                time: 0,
             },
         ]
     } ,
     {
         id: 7,
-        title: "title cook seven",
-        subtitle: "subtitle cook seven",
-        image: imageLoc.R2,
-        ingredients: "text aliniat frumos cu ingredeinte",
-        ustensile: "text aliniat frumos cu ustensile",
-        totalTime:"Timp total pentru a gati",
-        steps: [
+        title: "EGG CLOUD",
+        subtitle: "More than 3 ingredients,5 utensils, 25 minutes, 1 slice",
+        image: imageLoc.R7,
+        ingredients: [
             {
-                
-                text:" se aprinde aragazul1",
-                image: imageLoc.R2,
-                statusImage : imageLoc.step1,
-                time: 10000,
+                id:1,
+                text:"1 egg",
+            },
+            {
+                id:2,
+                text:"salt",
+            },
+            {
+                id:3,
+                text:"paper",
+            },            
+            {
+                id:4,
+                text:"Choose any of the ingredients below:",
+            },            
+            {
+                id:5,
+                text:"Meats: ham, salami, bacon, pancetta",
+            },            
+            {
+                id:6,
+                text:"Cheeses: parmesan, cheddar, cow cheese, sheep cheese",
+            }, 
+                       {
+                id:7,
+                text:"Greens: parsley, thyme, dill",
+            },
+            {
+                id:8,
+                text:"Vegetables: green onions, spinach, bell peppers",
+            },
+            {
+                id:9,
+                text:"Spices: oregano, garlic powder, sweet / spicy paprika, hot pepper flakes",
+            },
+        ],
+        ustensile: [
+            {
+                id:1,
+                text:"oven",
+            },
+            {
+                id:2,
+                text:"oven tray",
+            },
+            {
+                id:3,
+                text:"2 bowls",
+            },
+            {
+                id:4,
+                text:"mixer",
+            },
+            {
+                id:5,
+                text:"pallet",
+            },
+            {
+                id:6,
+                text:"spoon",
+            },
 
+        ],
+        imaginiUstensile:[
+            {
+                id:1,
+                image: imageLoc.mixer,
             },
             {
-                text:" se stinge aragazul2",
-                image: imageLoc.R2,
+                id:2,
+                image:imageLoc.bol,
+             },
+             {
+                id:3,
+                image:imageLoc.paleta,
+             },
+             {
+                id:4,
+                image:imageLoc.lingura,
+             },
+             {
+                id:5,
+                image:imageLoc.cuptor_microunde,
+             },             {
+                id:6,
+                image:imageLoc.tava,
+             },
+        ],
+        totalTime:"Total time: 25 minutes",
+        steps: [
+            {               
+                text:"Prepare the utensils",
+                image:[
+                    {
+                        id:1,
+                        image: imageLoc.mixer,
+                    },
+                    {
+                        id:2,
+                        image:imageLoc.bol,
+                     },
+                     {
+                        id:3,
+                        image:imageLoc.paleta,
+                     },
+                     {
+                        id:4,
+                        image:imageLoc.lingura,
+                     },
+                     {
+                        id:5,
+                        image:imageLoc.cuptor_microunde,
+                     },             {
+                        id:6,
+                        image:imageLoc.tava,
+                     },
+                ],
+                statusImage : imageLoc.step1,
+                time:0,
+            },
+            {
+                text:"Start the oven and let it preheat with high temperature till you make the composition",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.cuptor_microunde,
+                    },
+                ],
                 statusImage : imageLoc.step2,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul3",
-                image: imageLoc.R2,
+                text:"Grease a oven tray with oil and put on the bottom a baking paper",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.tava,
+                    },
+                ],
                 statusImage : imageLoc.step3,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul4",
-                image: imageLoc.R2,
+                text:"Separate the glair from the yolk. Be carefull with the yolk because we need it",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.ou_spart,
+                    },
+                ],
                 statusImage : imageLoc.step4,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul5",
-                image: imageLoc.R2,
+                text:"Mix the glair until smooth.\nUse medium to high speed",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.mixer,
+                    },
+                ],
                 statusImage : imageLoc.step5,
-                time: 10000,
+                time: 90000,
             },
             {
-                text:" se aprinde aragazul6",
-                image: imageLoc.R2,
+                text:"Add the ingredients you have chosen slowly with as few movements as possible using a pallet(not iron)",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.paleta,
+                    },
+                ],
                 statusImage : imageLoc.step6,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul7",
-                image: imageLoc.R2,
+                text:"Using a wood spoon, put the composition in the oven tray prepared previously.\nWith the back side of the spoon, make a place where you put the yolk",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.lingura,
+                    },
+                ],
                 statusImage : imageLoc.step7,
-                time: 10000,
+                time: 0,
             },
             {
-                text:" se aprinde aragazul8",
-                image: imageLoc.R2,
+                text:"Put the oven tray in the oven and let it cook!",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.cuptor_microunde,
+                    },
+                ],
                 statusImage : imageLoc.step8,
-                time: 10000,
+                time: 900000,
             },
             
             {
-                text:" se aprinde aragazul9",
-                image: imageLoc.R2,
-                statusImage : imageLoc.step9,
-                time: 10000,
-            },
-            {
-                text:" se aprinde aragazul10",
-                image: imageLoc.R2,
+                text:"Turn off the oven and take the tray out",
+                image:[
+                    {
+                        id:1,
+                        image:imageLoc.tava,
+                    },
+                ],
                 statusImage : imageLoc.step10,
-                time: 10000,
+                time: 0,
             },
         ]
     } ,
@@ -835,7 +1310,7 @@ export default [
         id: 8,
         title: "title cook eight",
         subtitle: "subtitle cook eight",
-        image: imageLoc.R2,
+        image: imageLoc.R8,
         ingredients: "text aliniat frumos cu ingredeinte",
         ustensile: "text aliniat frumos cu ustensile",
         totalTime:"Total time: 30'",

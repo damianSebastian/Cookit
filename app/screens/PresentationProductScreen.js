@@ -6,6 +6,7 @@ import defaultProps from '../config/defaultProps';
 import MyButton from '../components/MyButton';
 import AppText from '../components/AppText';
 import ListSeparator from '../components/ListSeparator';
+import ListItem from '../components/ListItem';
 
 function PresentationProductScreen({route, navigation}) {
     const item = route.params;
@@ -14,17 +15,20 @@ function PresentationProductScreen({route, navigation}) {
             
                 <Image style={style.image} resizeMode='cover' source={item.image}/>
               
-                    <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={item.title}/>
+                    <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={item.title}/> 
                     <AppText style={[defaultProps.mainText, {marginLeft: 10}]} text={item.subtitle}/>
                 
                     <ListSeparator/>
+
                     <AppText style={[defaultProps.titletext, {marginLeft: 20}]} text={"Ingredients"}/>
-                    <AppText style={[defaultProps.mainText, {marginLeft: 10}]} text={item.ingredients}/>
+                    {item.ingredients.map((it) => 
+                    <ListItem iconName="egg" text={it.text} key={it.id}/>)}
 
                     <ListSeparator />
 
                     <AppText text="Ustensile:" style={[defaultProps.titletext,{marginLeft: 20}]}/>
-                    <AppText text = {item.ustensile} style={[defaultProps.mainText,{marginLeft: 10}]}/>
+                    {item.ustensile.map((it) => 
+                    <ListItem iconName="check-bold" text={it.text} key={it.id}/>)}
                     
                     <View style={{flexDirection: 'row', flexWrap:'wrap'}}>
                             {item.imaginiUstensile.map((it) => 
@@ -32,8 +36,7 @@ function PresentationProductScreen({route, navigation}) {
                     </View>
 
                     <ListSeparator />
-
-                    <AppText style={defaultProps.titletext} text={item.totalTime}/>
+                    <ListItem iconName="clock" text={item.totalTime} style={defaultProps.titletext} size={40} color={defaultProps.colors.text}/>
 
                     <ListSeparator/>
                 
