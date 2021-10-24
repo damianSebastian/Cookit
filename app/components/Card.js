@@ -2,25 +2,9 @@ import React from 'react';
 import {View, StyleSheet, Image,Text, TouchableOpacity} from 'react-native';
 
 import defaultProps from '../config/defaultProps';
-import imageLoc from '../config/imagesLocation';
 
-function Card({title, subtitle, image, onPress,showBadge}) {
 
-  let badge;
-  if (showBadge) {
-    badge= <Image 
-    source={imageLoc.finish}
-    resizeMode='contain'
-    style={styles.cookStatus}
-    /> 
-  } else {
-    badge= <Image 
-    source={imageLoc.step1}
-    resizeMode='contain'
-    style={styles.cookStatus}
-    />
-  }
-
+function Card({title, subtitle, image, onPress}) {
     return (
         <TouchableOpacity style={styles.card} onPress={onPress}>
             <Image source={image} style={styles.image}/>            
@@ -30,7 +14,7 @@ function Card({title, subtitle, image, onPress,showBadge}) {
                 <Text style={defaultProps.mainText}>{title}</Text>
                 <Text style={defaultProps.descriptionText}>{subtitle}</Text>               
               </View>
-                {badge}
+                
             </View>
           
         </TouchableOpacity>
